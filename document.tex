@@ -1,6 +1,7 @@
 \documentclass[10pt,a4paper]{article}
 
 \usepackage{tikz}
+\usepackage{CJKutf8}
 \usepackage[utf8]{inputenc}	%utf8  to build from any machine
 \usepackage[a4paper]{geometry} %define page styles using geometry	
 
@@ -34,9 +35,36 @@
 
 
 
-\begin{document}
+% -------------
+%   Languages
+% --------------
 
-\resumesection{Test1}
-\resumesection{Test2}
+
+\newtoggle{ja}
+\newtoggle{en}
+\toggletrue{ja}
+\toggletrue{en}
+
+\newcommand{\ja}[1]
+{
+	\iftoggle{ja}{
+	\begin{CJK}{UTF8}{min}#1\end{CJK}
+	}
+	
+}
+
+\newcommand{\en}[1]
+{
+	\iftoggle{en}{
+		#1
+	}
+}
+
+
+
+\begin{document}
+	
+\resumesection{\ja{日本語}}
+\resumesection{\en{English}}
 
 \end{document}
