@@ -1,0 +1,42 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}	%utf8  to build from any machine
+\usepackage[a4paper]{geometry} %define page styles using geometry	
+
+% change the margins to 2 inches all round
+\geometry{top=1.75cm, bottom=-.6cm, left=1.5cm, right=1.5cm} 
+
+% -----------------
+%	Color 
+% -----------------
+
+\usepackage{color}
+
+\definecolor{col1}{RGB}{255,150,0}
+
+
+
+% ---------------
+%   Shapes
+% ---------------
+
+
+\usepackage{tcolorbox}
+
+\newcommand{\resumesection}[1]
+{
+\noindent\color{col1}{\rule{1\linewidth}{1mm}}
+\begin{tcolorbox}[width=7cm, height=0.9cm, colframe=col1, colback=col1, arc=3mm, sharp corners, rounded corners=southeast, enlarge top by=-1.6mm]
+	\textcolor{white}{#1}
+\end{tcolorbox}
+}
+
+
+
+\begin{document}
+
+\resumesection{Test1}
+\resumesection{Test2}
+
+\end{document}
