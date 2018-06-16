@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}	%utf8  to build from any machine
 \usepackage[a4paper]{geometry} %define page styles using geometry	
 
+
 % change the margins to 2 inches all round
 \geometry{top=1.75cm, bottom=-.6cm, left=1.5cm, right=1.5cm} 
 
@@ -43,23 +44,19 @@
 
 \newtoggle{ja}
 \newtoggle{en}
-\toggletrue{ja}
+\togglefalse{ja}
 \toggletrue{en}
 
-\newcommand{\ja}[1]
-{
-	\iftoggle{ja}{
-	\begin{CJK}{UTF8}{min}#1\end{CJK}
-	}
-	
+% Multi language text 
+\newcommand{\mlt}[2]{
+	\iftoggle{en}{#1}{}
+	\iftoggle{ja}{\begin{CJK}{UTF8}{min}#2\end{CJK}}{}
 }
 
-\newcommand{\en}[1]
-{
-	\iftoggle{en}{
-		#1
-	}
-}
+
+% --------
+%  Icons 
+% --------
 
 \newcommand*{\marvosymbol}[1]{{\fontfamily{mvs}\fontencoding{U}\fontseries{m}\fontshape{n}\selectfont\char#1}}
 \definecolor{color2}{rgb}{0.55,0.55,0.55}% Chose your color here.
@@ -221,18 +218,22 @@
 
 \begin{document}
 	
-	\noindent% prevent the box to be shifted a bit to the right
-	\makebox[\textwidth][r]{% create a box, with it's content aligned to the right
-		\begin{minipage}{.3\textwidth}% create a content half width
-			\fixedphonesymbol 1-510-326-3431 \\
-			\emailsymbol joshuabtanner@gmail.com \\
-			\githubsocialsymbol github.com/Mindful \\
-			\linkedinsocialsymbol linkedin.com/in/joshuatanner2/ \\
-		\end{minipage}
-	}
+	
+	\noindent
+	\begin{minipage}{.5\textwidth}
+		{\huge{\textbf{Joshua Tanner}}} \\
+		\mlt{Software Engineer}{システムエンジニア}
+	\end{minipage}% This must go next to `\end{minipage}`
+	\begin{minipage}{.5\textwidth}
+		\fixedphonesymbol 1-510-326-3431 \\
+		\emailsymbol joshuabtanner@gmail.com \\
+		\githubsocialsymbol github.com/Mindful \\
+		\linkedinsocialsymbol linkedin.com/in/joshuatanner2/ \\
+	\end{minipage}
 	
 	
-\resumesection{\ja{日本語}}
-\resumesection{\en{English}}
+	
+\resumesection{\mlt{English}{日本語}}
+\resumesection{\mlt{Test}{テスト}}
 
 \end{document}
