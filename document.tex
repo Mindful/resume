@@ -4,6 +4,20 @@
 \usepackage{CJKutf8}
 \usepackage[utf8]{inputenc}	%utf8  to build from any machine
 \usepackage[a4paper]{geometry} %define page styles using geometry	
+\usepackage{tcolorbox}
+\usepackage{color}
+
+% ------------
+% Toggles 
+% -----------
+
+\newtoggle{ja}
+\newtoggle{en}
+\togglefalse{ja}
+\toggletrue{en}
+
+\newtoggle{photo}
+\toggletrue{photo}
 
 
 % change the margins to 2 inches all round
@@ -13,7 +27,6 @@
 %	Color 
 % -----------------
 
-\usepackage{color}
 
 \definecolor{col1}{RGB}{185,185,185}
 
@@ -24,7 +37,6 @@
 % ---------------
 
 
-\usepackage{tcolorbox}
 
 \newcommand{\resumesection}[1]
 {
@@ -40,12 +52,6 @@
 % -------------
 %   Languages
 % --------------
-
-
-\newtoggle{ja}
-\newtoggle{en}
-\togglefalse{ja}
-\toggletrue{en}
 
 % Multi language text 
 \newcommand{\mlt}[2]{
@@ -220,20 +226,34 @@
 	
 	
 	\noindent
-	\begin{minipage}{.5\textwidth}
+	\begin{minipage}{.3\textwidth}
 		{\huge{\textbf{Joshua Tanner}}} \\
 		\mlt{Software Engineer}{システムエンジニア}
 	\end{minipage}% This must go next to `\end{minipage}`
-	\begin{minipage}{.5\textwidth}
-		\fixedphonesymbol 1-510-326-3431 \\
-		\emailsymbol joshuabtanner@gmail.com \\
-		\githubsocialsymbol github.com/Mindful \\
-		\linkedinsocialsymbol linkedin.com/in/joshuatanner2/ \\
+	\hfill
+	\begin{minipage}{.3\textwidth}
+				\fixedphonesymbol 1-510-326-3431 \\
+				\emailsymbol joshuabtanner@gmail.com \\
+				\githubsocialsymbol github.com/Mindful \\
+				\linkedinsocialsymbol linkedin.com/in/joshuatanner2/ \\
 	\end{minipage}
+	\iftoggle{photo}{
+		\begin{minipage}{.3\textwidth}
+		\begin{flushright}
+			\medskip
+			\fbox{\includegraphics[width=2.75cm, height=2.75cm]{photo.jpg}}
+			\medskip
+		\end{flushright}
+	\end{minipage}
+	}{}
 	
 	
 	
-\resumesection{\mlt{English}{日本語}}
-\resumesection{\mlt{Test}{テスト}}
+\resumesection{\mlt{Experience}{職務経歴}}
+\resumesection{\mlt{Projects}{個人開発}}
+\resumesection{\mlt{Awards}{受賞歴}}
+\resumesection{\mlt{Education}{学歴}}
+
+% Summary? Skills/Languages as one section with them spread out horizontally?
 
 \end{document}
