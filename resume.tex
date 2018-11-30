@@ -10,39 +10,28 @@
 \usepackage{amssymb} %for black triangular bullet
 
 % change the margins to 2 inches all round
-\geometry{top=1.75cm, bottom=-.6cm, left=1.5cm, right=1.5cm} 
-
-% -----------------
-%	Color 
-% -----------------
+\geometry{top=1.75cm, bottom=0.75cm, left=1.5cm, right=1.5cm} 
 
 
-\definecolor{col1}{RGB}{185,185,185}
-\definecolor{color2}{rgb}{0.55,0.55,0.55}
+\input{resume_components.tex}
+
 
 % ------------
 % Toggles 
 % -----------
 
-\newtoggle{ja}
-\newtoggle{en}
 \togglefalse{ja}
 \toggletrue{en}
-
-\newtoggle{photo}
 \toggletrue{photo}
-
-
-\newtoggle{long}
 \toggletrue{long}
-
-\input{resume_components.tex}
+\toggletrue{summary}
 
 
 % ---------
 % Content
 % --------
 
+\newcommand{\summary}{\mlt{Summary}{自己紹介}}
 \newcommand{\experience}{\mlt{Experience}{職務経歴}}
 \newcommand{\skills}{\mlt{Skills}{技術}}
 \newcommand{\languages}{\mlt{Languages}{言語}}
@@ -54,6 +43,9 @@
 \newcommand{\skillsframeworks}{\mlt{Frameworks}{フレームワーク}}
 \newcommand{\skillsmisc}{\mlt{Other Technology}{その他の専門技術}}
 \newcommand{\skillslanguage}{\mlt{Natural Languages}{自然言語}}
+
+
+\newcommand{\summarybody}{\mlt{I’m a software engineer with a focus on backend work and complex systems. Programming has been a hobby for me since long before it became my job, but my passion for quality of work has remained constant. I also have a soft spot for linguistics and enjoy learning languages.}{バックエンド作業と複雑なシステムに取り組む事を楽しめる開発者である。仕事でプログラミングをする前からずっと趣味でコードを書き、コードの質にこだわる事を最初から続けている。言語学と語学にも興味を持つ。}}
 
 
 
@@ -121,29 +113,37 @@
 
 
 \newcommand{\awardGoldenTicket}{
-	\award{\mlt{Golden Ticket to present at eBay Innovation Expo}{eBayイノベーション博覧会での発表者に選ばれた}}
-	{eBay Hack Week}
-	{\mlt{2016/06/24}{2016年06月24日}} 
-	
-	\\[0.5\baselineskip]
-	\mlt{Recipient of one of the two Golden Tickets for the Seattle office, our team developed JavaScript which called an accompanying Node.js service to convert n-grams on web pages into eBay affiliate links. My work included developing the heuristic to select n-grams based on a combination of relevance to page content and item presence in eBay inventory, and work on the backend Node.js service.}
-	{シアトル支社で選ばれた2つのチームの1つであり、我々がウェブページでnグラムをアフィリエイトリンクに変換するJavaScriptとNode.jsサービスを開発した。私がページ内容への関連性とその商品がeBayの在庫にあるかどうかに基づきnグラムを選択するヒューリスティックを開発し、Node.jsサービスに取り組んだ。}
+	\begin{minipage}{1\linewidth}
+		\award{\mlt{Golden Ticket to present at eBay Innovation Expo}{eBayイノベーション博覧会での発表者に選ばれた}}
+		{eBay Hack Week}
+		{\mlt{2016/06/24}{2016年06月24日}} 
+		
+		\\[0.5\baselineskip]
+		\mlt{Recipient of one of the two Golden Tickets for the Seattle office, our team developed JavaScript which called an accompanying Node.js service to convert n-grams on web pages into eBay affiliate links. My work included developing the heuristic to select n-grams based on a combination of relevance to page content and item presence in eBay inventory, and work on the backend Node.js service.}
+		{シアトル支社で選ばれた2つのチームの1つであり、我々がウェブページでnグラムをアフィリエイトリンクに変換するJavaScriptとNode.jsサービスを開発した。私がページ内容への関連性とその商品がeBayの在庫にあるかどうかに基づきnグラムを選択するヒューリスティックを開発し、Node.jsサービスに取り組んだ。}
+	\end{minipage}
 }
 
 \newcommand{\awardEbayApi}{
-	\award{\mlt{Best eBay API Integration}{eBay API利用部門で優勝}}
-	{2013 CodeDay Seattle}
-	{\mlt{2013/05/26}{2013年05月26日}}
-	
-	\\[0.5\baselineskip]
-	\mlt{Built the backend for a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user.}
-	{ユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションのバックエンドをPythonで開発した。}
-	
+	\begin{minipage}{1\linewidth}
+		\award{\mlt{Best eBay API Integration}{eBay API利用部門で優勝}}
+		{2013 CodeDay Seattle}
+		{\mlt{2013/05/26}{2013年05月26日}}
+		
+		\\[0.5\baselineskip]
+		\mlt{Built the backend for a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user.}
+		{ユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションのバックエンドをPythonで開発した。}
+	\end{minipage}
 }
 
 \newcommand{\educationEvergreen}{
-	\education{\mlt{The Evergreen State College}{エバーグリーン州立大学}{\mlt{2012/09 – 2015/4}{2012年9月 – 2015年4月}}}
-	\mlt{Graduated early with a major in computer science and a minor in Japanese.}{コンピュータ科学の専攻と日本語の副専攻で早期卒業。}\iftoggle{long}{}{\\[0.5\baselineskip]}
+	\education{\mlt{The Evergreen State College}{エバーグリーン州立大学}}{\mlt{2012/09 – 2015/4}{2012年9月 – 2015年4月}}
+	\mlt{Graduated early with a major in computer science and a minor in Japanese.}{コンピュータ科学の専攻と日本語の副専攻で早期卒業}\iftoggle{long}{}{\\[0.5\baselineskip]}
+}
+
+\newcommand{\educationHyogo}{
+	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2014/4 – 2015/4}{2014年4月 – 2015年4月}}
+	\mlt{Studied Japanese language in a yearlong exchange program.}{日本語の勉強を中心とした留学プログラム}\iftoggle{long}{}{\\[0.5\baselineskip]}
 }
 
 \newcommand{\skillenglish}{\mlt{English - Native}{英語 - 母国語}}
@@ -182,55 +182,56 @@
 	% -------
 	
 	\iftoggle{long}{ % --------------------------- LONG -----------------------------------
+		
+		\iftoggle{summary}{
+			\majorsection{\summary} \\
+			\summarybody \halflinebreak
+		}{}
+		
+		
 		\majorsection{\experience} \\
 		\jobexpNPD
 		\jobexpGSP
 		\jobexpGDIIntern
 		
-		\majorsection{\skills} \littlelinebreak
+		\majorsection{\skills} \halflinebreak
 		
 		\begin{minipage}{0.45\textwidth}
-				\begin{tabular}{l l l}
-					\multicolumn{3}{l}{\minorsection{\skillsprogramminglanguages}}\\
-					Scala &  Python & Java  \\
-					Ruby& Javascript & C++
-				\end{tabular} \\ \littlelinebreak
-				\begin{tabular}{l l}
-					\multicolumn{2}{l}{\minorsection{\skillsmisc}}\\
-					Git & Protobuf \\
-					\LaTeX
-				\end{tabular}
+			\begin{tabular}{l l l}
+				\multicolumn{3}{l}{\minorsection{\skillsprogramminglanguages}}\\
+				Scala &  Python & Java  \\
+				Ruby& Javascript & C++
+			\end{tabular} \\ \halflinebreak
+			\begin{tabular}{l l}
+				\multicolumn{2}{l}{\minorsection{\skillsmisc}}\\
+				Git & Protobuf \\
+				\LaTeX
+			\end{tabular}
 		\end{minipage}
 		\begin{minipage}{0.45\textwidth}
-				\begin{tabular}{l l}
-					\multicolumn{2}{l}{\minorsection{\skillsframeworks}}\\
-					Play2 (Scala) & Ruby on Rails  \\
-					Spacy & Falcon 
-				\end{tabular} \\ \littlelinebreak
-				\begin{tabular}{l}
-					\minorsection{\skillslanguage} \\
-					\skillenglish \\
-					\skilljapanese
-				\end{tabular}
-		\end{minipage} \\\littlelinebreak
+			\begin{tabular}{l l}
+				\multicolumn{2}{l}{\minorsection{\skillsframeworks}}\\
+				Play2 (Scala) & Ruby on Rails  \\
+				Spacy & Falcon 
+			\end{tabular} \\ \halflinebreak
+			\begin{tabular}{l}
+				\minorsection{\skillslanguage} \\
+				\skillenglish \\
+				\skilljapanese
+			\end{tabular}
+		\end{minipage} \\\halflinebreak
 		
-		\majorsection{\projects} \littlelinebreak
+		\majorsection{\projects} \\
+		\projectParasite \quarterlinebreak \\
+		\projectPytext \halflinebreak
 		
-		\begin{itemize}[noitemsep,topsep=0pt]
-			\item \projectParasite
-			\item \projectPytext
-		\end{itemize}
+		\majorsection{\awards} \quarterlinebreak \\
+		\awardGoldenTicket \\\quarterlinebreak\\
+		\awardEbayApi \\\\
 		
-		\majorsection{\awards} \littlelinebreak
-		
-		\begin{itemize}[noitemsep,topsep=0pt]
-			\item \awardGoldenTicket
-			\item \awardEbayApi
-		\end{itemize}
-		
-		\majorsection{\educationhistory}
-		
-		\educationEvergreen
+		\majorsection{\educationhistory} \quarterlinebreak \\
+		\educationEvergreen \quarterlinebreak \\
+		\educationHyogo
 	}{ %----------------------------- SHORT ---------------------------------------
 		
 		\begin{minipage}[t]{0.25\textwidth}
@@ -255,7 +256,7 @@
 				Git & Protobuf \\
 				\LaTeX
 			\end{tabular}
-		
+			
 			\textbf{\skillslanguage} \\
 			\begin{tabular}{l}
 				\skillenglish \\
@@ -263,7 +264,9 @@
 			\end{tabular}
 			
 			
-			\minorsection{\educationhistory}
+			\minorsection{\educationhistory} \\
+			\educationEvergreen
+			\educationHyogo
 			
 		\end{minipage}
 		\hfill
