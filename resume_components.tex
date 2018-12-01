@@ -60,7 +60,7 @@
 % --------------
 
 % Multi language text - this has to be one line or it generates extra whitespace
-\newcommand{\mlt}[2]{\iftoggle{en}{#1}{}\iftoggle{ja}{\begin{CJK}{UTF8}{min}#2\end{CJK}}{}}
+\newcommand{\mlt}[2]{\iftoggle{en}{#1}{}\iftoggle{ja}{#2}{}}
 
 
 % --------

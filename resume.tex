@@ -1,19 +1,27 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage{tikz}
-\usepackage{CJKutf8}
-\usepackage[utf8]{inputenc}	%utf8  to build from any machine
+\usepackage{tikz} %Symbols
 \usepackage[a4paper]{geometry} %define page styles using geometry	
-\usepackage{tcolorbox}
-\usepackage{color}
-\usepackage{enumitem}
-\usepackage{amssymb} %for black triangular bullet
+\usepackage{enumitem} %Lists
+\usepackage{etoolbox} %Toggles
+\usepackage{xeCJK} %JP Text
+\usepackage{fontspec} %Set English font
+
+%https://www.google.com/get/noto/
+\setmainfont[BoldFont=NotoSans-Regular,ItalicFont=NotoSans-LightItalic, BoldItalicFont=NotoSans-Italic]{Noto Sans-Light}
+\setCJKmainfont[BoldFont=NotoSansCJKjp-Regular,AutoFakeSlant=0.15]{Noto Sans CJK JP-Light}
+
+%Heavier fonts
+%\setmainfont{Noto Sans}
+%\setCJKmainfont[BoldFont=NotoSansCJKjp-Bold,AutoFakeSlant=0.15]{Noto Sans CJK JP}
 
 % change the margins to 2 inches all round
 \geometry{top=1.75cm, bottom=0.75cm, left=1.5cm, right=1.5cm} 
 
 
+
 \input{resume_components.tex}
+\input{pii.tex}
 
 
 % ------------
@@ -23,7 +31,7 @@
 \togglefalse{ja}
 \toggletrue{en}
 \toggletrue{photo}
-\toggletrue{long}
+\togglefalse{long}
 \toggletrue{summary}
 
 
@@ -154,10 +162,10 @@
 	\end{minipage}% This must go next to `\end{minipage}`
 	\hfill
 	\begin{minipage}{.3\textwidth}
-		\fixedphonesymbol 1-510-326-3431 \\
-		\emailsymbol joshuabtanner@gmail.com \\
-		\githubsocialsymbol github.com/Mindful \\
-		\linkedinsocialsymbol linkedin.com/in/joshuatanner2/ \\
+		\fixedphonesymbol \phonenumber \\
+		\emailsymbol \email \\
+		\githubsocialsymbol \github \\
+		\linkedinsocialsymbol \linkedin \\
 	\end{minipage}
 	\iftoggle{photo}{
 		\begin{minipage}{.3\textwidth}
@@ -278,9 +286,5 @@
 		\end{minipage}
 		
 	}
-	
-	
-	% Summary? Skills/Languages as one section with them spread out horizontally?
-	% Why does "的" not render properly? :( See: 自発的
 	
 \end{document}
