@@ -6,8 +6,8 @@
 % Toggles 
 % -----------
 
-\togglefalse{ja}
-\toggletrue{en}
+\toggletrue{ja}
+\togglefalse{en}
 \togglefalse{photo}
 \toggletrue{long}
 \toggletrue{summary}
@@ -42,8 +42,8 @@
 	{\mlt{November 2016}{2016年11月}}
 	{\mlt{Present}{現在}}
 	\begin{itemize}[noitemsep]
-		\item \mlt{Developed from scratch, wrote tests for, and then took sole ownership of the Scala distributed scheduling service that powers eBay ShopBot's proactive messaging}
-		{eBay ShopBotの自発的なメッセージを送信する分散スケジューラサービスとその自動テストをScalaでゼロから開発}
+		\item \mlt{Developed from scratch, wrote tests for, and maintained sole ownership of the Scala distributed scheduler that powers proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}
+		{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信する分散スケジューラとその自動テストをScalaでゼロから開発し、一人で保守}
 		\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from reviews, using Python and Spacy (based on “RevMiner" paper)}
 		{PythonでSpacyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装　（“RevMiner”という論文に基づき）}
 		\item \mlt{Developed a Ruby on Rails web service that allowed non-technical users to customize and schedule proactive messages from ShopBot to users }
@@ -97,21 +97,28 @@
 	{ユーザーの入力したメッセージをメールとしてSMSゲートウェイに送信する事により、電話番号なしでSMS会話に参加する事を可能にするデスクトップアプリケーションである。一人でPythonで開発した。}\iftoggle{long}{}{\\[0.5\baselineskip]}
 }
 
+\newcommand{\awardAmplify}{
+	\award{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に入選}}
+	{\mlt{Paper Submission}{論文投稿}}
+	{\mlt{2018/05/7}{2018年5月7日}}
+	{\mlt{Chosen as a presenter for eBay's internal research conference (25\% acceptance rate). NLP research I had conducted as a side project won out over the submissions of full-time researchers. }{eBayの社内学会の登壇者に選ばれた (25％のアクセプト率)。片手間で行った自然言語処理の研究が本業の研究者の論文と争い、勝ち抜いた。}}
+}
+
 
 \newcommand{\awardGoldenTicket}{
-		\award{\mlt{Golden Ticket to present at eBay Innovation Expo}{eBayイノベーション博覧会での発表者に選ばれた}}
+		\award{\mlt{eBay Innovation Expo Presenter}{eBayイノベーション博覧会の発表者に入選}}
 		{eBay Hack Week}
 		{\mlt{2016/06/24}{2016年06月24日}}
-		{\mlt{Recipient of one of the two Golden Tickets for the Seattle office, our team developed JavaScript which called an accompanying Node.js service to convert n-grams on web pages into eBay affiliate links. My work included developing the heuristic to select n-grams based on a combination of relevance to page content and item presence in eBay inventory, and work on the backend Node.js service.}
-		{シアトル支社で選ばれた2つのチームの1つであり、我々がウェブページでnグラムをアフィリエイトリンクに変換するJavaScriptとNode.jsサービスを開発した。私がページ内容への関連性とその商品がeBayの在庫にあるかどうかに基づきnグラムを選択するヒューリスティックを開発し、Node.jsサービスに取り組んだ。}}
+		{\mlt{One of two teams chosen from among 14 to present our work, we developed a Node.js service which selected n-grams from web pages to turn into eBay affiliate links using a heuristic based on relevance to page content.}
+		{14つの中から選ばれた2つのチームの1つであり、我々がウェブページのnグラムをページ内容への関連性に基づくヒューリスティックで選択し、アフィリエイトリンクに変換するNode.jsサービスを開発した。}}
 }
 
 \newcommand{\awardEbayApi}{
 		\award{\mlt{Best eBay API Integration}{eBay API利用部門で優勝}}
 		{2013 CodeDay Seattle}
 		{\mlt{2013/05/26}{2013年05月26日}}
-		{\mlt{Built the backend for a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user.}
-		{ユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションのバックエンドをPythonで開発した。}}
+		{\mlt{We placed first in category among 7 teams by building a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user. }
+		{部門で7つのチームの中から優勝した我々がユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションをPythonで開発した。}}
 }
 
 \newcommand{\educationEvergreen}{
@@ -204,8 +211,9 @@
 		\projectPytext \halflinebreak
 		
 		\majorsection{\awards} \quarterlinebreak \\
-		\awardGoldenTicket \\\quarterlinebreak\\
-		\awardEbayApi \\\\
+		\awardAmplify \\\quarterlinebreak
+		\awardGoldenTicket \\\quarterlinebreak
+		\awardEbayApi \\\quarterlinebreak
 		
 		\majorsection{\educationhistory} \quarterlinebreak \\
 		\educationEvergreen \quarterlinebreak \\
@@ -216,14 +224,14 @@
 			
 			\minorsection{\skills}
 			
-			\textbf{\skillsprogramminglanguages}
+			\textbf{\skillsprogramminglanguages} \\
 			\begin{tabular}{l l}
 				Scala &  Python  \\ 
 				Java  & Ruby  \\ 
 				Javascript & C++
 			\end{tabular}
 			
-			\textbf{\skillsframeworks}
+			\textbf{\skillsframeworks} \\
 			\begin{tabular}{l l}
 				Play2 (Scala) & Spacy  \\
 				Ruby on Rails & Falcon 
@@ -239,8 +247,7 @@
 			\begin{tabular}{l}
 				\skillenglish \\
 				\skilljapanese
-			\end{tabular}
-			
+			\end{tabular}\\
 			
 			\minorsection{\educationhistory} \\
 			\educationEvergreen
@@ -254,13 +261,14 @@
 			\jobexpGSP
 			\jobexpGDIIntern
 			
-			\majorsection{\projects} \\
-			\projectParasite 
-			\projectPytext
+			\majorsection{\awards} \quarterlinebreak \\
+			\awardAmplify \quarterlinebreak\\
+			\awardGoldenTicket \\
+			%\awardEbayApi
 			
-			\majorsection{\awards} \\
-			\awardGoldenTicket
-			\awardEbayApi
+			\majorsection{\projects} \\
+			\projectParasite
+			%\projectPytext
 		\end{minipage}
 		
 	}
