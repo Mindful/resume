@@ -1,3 +1,27 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{tikz} %Graphics
+\usepackage[a4paper]{geometry} %define page styles using geometry	
+\usepackage{enumitem} %Lists
+\usepackage{etoolbox} %Toggles
+\usepackage{xeCJK} %JP Text
+\usepackage{fontspec} %Set English font
+
+%https://www.google.com/get/noto/
+\setmainfont[BoldFont=NotoSans-Regular,ItalicFont=NotoSans-LightItalic, BoldItalicFont=NotoSans-Italic]{Noto Sans-Light}
+\setCJKmainfont[BoldFont=NotoSansCJKjp-Regular,AutoFakeSlant=0.15]{Noto Sans CJK JP-Light}
+
+%Heavier fonts
+%\setmainfont{Noto Sans}
+%\setCJKmainfont[BoldFont=NotoSansCJKjp-Bold,AutoFakeSlant=0.15]{Noto Sans CJK JP}
+
+\defaultfontfeatures{Path = /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/}
+\usepackage{fontawesome} % Social symbols
+
+% change the margins to 2 inches all round
+\geometry{top=1.75cm, bottom=0.75cm, left=1.5cm, right=1.5cm} 
+
+
 % ---------------
 % Toggle Definitions
 % ---------------
@@ -29,7 +53,7 @@
 \newcommand{\jobexperience}[5]{
 	\noindent
 	\begin{minipage}{0.8\linewidth}
-		{\large{#1, #2 }} \\
+		{\large\textbf{#1, #2 }} \\
 		#4 - #5
 	\end{minipage}
 	{\large{\hfil \hfill \textbf{#3}}}
@@ -39,19 +63,19 @@
 	\begin{minipage}{1\linewidth}
 		\noindent
 		\begin{minipage}{0.6\linewidth}
-			{\large{#1}} \\
+			{\large\textbf{#1}} \\
 			#3
 		\end{minipage} \vspace{-0.5\baselineskip}
 		{\large{\hfil \hfill \textbf{#2}}}
-		\\[0.5\baselineskip]
+		\\[0.75\baselineskip]
 		#4
 	\end{minipage}
 }
 
-\newcommand{\project}[1]{\noindent{\large{#1}} \\ }
+\newcommand{\project}[1]{\noindent{\large\textbf{#1}} \\ }
 
 \newcommand{\education}[2]{
-	\noindent{\large{#1}}\\
+	\noindent{\large\textbf{#1}}\\
 	#2
 }
 
