@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage{tikz} %Symbols
+\usepackage{tikz} %Graphics
 \usepackage[a4paper]{geometry} %define page styles using geometry	
 \usepackage{enumitem} %Lists
 \usepackage{etoolbox} %Toggles
@@ -14,6 +14,9 @@
 %Heavier fonts
 %\setmainfont{Noto Sans}
 %\setCJKmainfont[BoldFont=NotoSansCJKjp-Bold,AutoFakeSlant=0.15]{Noto Sans CJK JP}
+
+\defaultfontfeatures{Path = /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/}
+\usepackage{fontawesome} % Social symbols
 
 % change the margins to 2 inches all round
 \geometry{top=1.75cm, bottom=0.75cm, left=1.5cm, right=1.5cm} 
@@ -31,7 +34,7 @@
 \togglefalse{ja}
 \toggletrue{en}
 \toggletrue{photo}
-\togglefalse{long}
+\toggletrue{long}
 \toggletrue{summary}
 
 
@@ -147,7 +150,7 @@
 }
 
 \newcommand{\skillenglish}{\mlt{English - Native}{英語 - 母国語}}
-\newcommand{\skilljapanese}{\mlt{Japanese - Fluent (JLPT N1)}{日本語 - 流暢　(日本語能力試験N1合格)}}
+\newcommand{\skilljapanese}{\mlt{Japanese - Fluent (JLPT N1)}{日本語 - 日本語能力試験N1}}
 
 \begin{document}
 	
@@ -162,10 +165,10 @@
 	\end{minipage}% This must go next to `\end{minipage}`
 	\hfill
 	\begin{minipage}{.3\textwidth}
-		\fixedphonesymbol \phonenumber \\
-		\emailsymbol \email \\
-		\githubsocialsymbol \github \\
-		\linkedinsocialsymbol \linkedin \\
+		\faPhone \hspace{1pt} \phonenumber \\
+		\faEnvelope \hspace{1pt} \email \\
+		\faGithub \hspace{1pt} \github \\
+		\faLinkedin \hspace{1pt} \linkedin \\
 	\end{minipage}
 	\iftoggle{photo}{
 		\begin{minipage}{.3\textwidth}
