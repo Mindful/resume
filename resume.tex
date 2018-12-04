@@ -6,8 +6,8 @@
 % Toggles 
 % -----------
 
-\togglefalse{ja}
-\toggletrue{en}
+\toggletrue{ja}
+\togglefalse{en}
 \togglefalse{photo}
 \toggletrue{long}
 \toggletrue{summary}
@@ -45,7 +45,7 @@
 		\item \mlt{Developed from scratch, wrote tests for, and maintained sole ownership of the Scala distributed scheduler that powers proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}
 		{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信する分散スケジューラとその自動テストをScalaでゼロから開発し、一人で保守}
 		\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from reviews, using Python and Spacy (based on “RevMiner" paper)}
-		{PythonでSpacyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装　（“RevMiner”という論文に基づき）}
+		{PythonでSpacyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装 (“RevMiner”という論文に基づき)}
 		\item \mlt{Developed a Ruby on Rails web service that allowed non-technical users to customize and schedule proactive messages from ShopBot to users }
 		{Ruby on Railsを利用し、非技術系社員が顧客へのメッセージをカスタマイズしたりスケジュール送信できるウェブアプリケーションをゼロから開発}
 	\end{itemize}
@@ -65,7 +65,7 @@
 		\item \mlt{Drove an effort to automate excessive manual operations work, saving the team 10s of hours of work per week }
 		{インフラやデータ整理などの手作業を自動化する取り組みを率い、チームの一週間当たりの手作業時間を数十時間減少させる事に成功}
 		\item \mlt{Rearchitected the pipeline used to import shipping charge data from shipping partners, increasing the accuracy of shipping prices on eBay's search results page by up to 40\%}
-		{提携している運送会社からデータをインポートするパイプラインを再構築し、eBayの検索結果ページに載る配送料の精度を最高で40％改善}
+		{提携先の運送会社からデータをインポートするパイプラインを再構築し、eBayの検索結果ページに載る配送料の精度を最大で40％改善}
 	\end{itemize}
 }
 
@@ -88,7 +88,7 @@
 \newcommand{\projectParasite}{
 	\project{Parasite} 
 	\mlt{A mod for StarCraft 2, which at peak averaged 2 million plays per week.  Written in a combination of a native GUI language and Galaxy, a C-like language. I was responsible for the architecture, design, and vast majority of the code written, eventually onboarding another developer and two community managers.}
-	{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというCのようなプログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}\iftoggle{long}{}{\\[0.5\baselineskip]}
+	{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというC言語系プログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}\iftoggle{long}{}{\\[0.5\baselineskip]}
 }
 
 \newcommand{\projectPytext}{
@@ -101,7 +101,7 @@
 	\award{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
 	{\mlt{Paper Submission}{論文投稿}}
 	{\mlt{2018/05/7}{2018年5月7日}}
-	{\mlt{Chosen as a presenter for eBay's internal research conference (25\% acceptance rate). NLP research I had conducted as a side project won out over the submissions of full-time researchers. }{eBayの社内学会の登壇者に選ばれた (25％のアクセプト率)。片手間で行った自然言語処理の研究が本業の研究者の論文と争い、勝ち抜いた。}}
+	{\mlt{Chosen as a presenter for eBay's internal research conference (25\% acceptance rate). NLP research I had conducted as a side project won out over the submissions of full-time researchers. }{eBayの社内学会の登壇者に選ばれた (25％のアクセプト率)。片手間で進めた自然言語処理の研究が本業の研究者の論文と争い、勝ち抜いた。}}
 }
 
 
@@ -109,16 +109,16 @@
 		\award{\mlt{eBay Innovation Expo Presenter}{eBayイノベーション博覧会の発表者に選出}}
 		{eBay Hack Week}
 		{\mlt{2016/06/24}{2016年06月24日}}
-		{\mlt{One of two teams chosen from among 14 to present our work, we developed a Node.js service which selected n-grams from web pages to turn into eBay affiliate links using a heuristic based on relevance to page content.}
-		{14つの中から選ばれた2つのチームの1つであり、我々がウェブページのnグラムをページ内容への関連性に基づくヒューリスティックで選択し、アフィリエイトリンクに変換するNode.jsサービスを開発した。}}
+		{\mlt{One of two teams chosen from among 14 participating in Hack Week to present our work at eBay's Innovation Expo, we developed a Node.js service which selected n-grams from web pages to turn into eBay affiliate links using a heuristic based on relevance to page content.}
+		{ウェブページのnグラムをページ内容への関連性に基づくヒューリスティックで選択し、アフィリエイトリンクに変換するNode.jsサービスを開発し、Hack Weekに参加した14チーム中から博覧会で作品を発表する2チームの1つに選ばれた。}}
 }
 
 \newcommand{\awardEbayApi}{
 		\award{\mlt{Best eBay API Integration}{eBay API利用部門で優勝}}
 		{2013 CodeDay Seattle}
 		{\mlt{2013/05/26}{2013年05月26日}}
-		{\mlt{We placed first in category among 7 teams by building a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user. }
-		{部門で7つのチームの中から優勝した我々がユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションをPythonで開発した。}}
+		{\mlt{Placed first in category among 7 teams by building a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user. }
+		{ユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションをPythonで開発し、部門で7つのチームの中から優勝した。}}
 }
 
 \newcommand{\educationEvergreen}{
