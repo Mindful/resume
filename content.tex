@@ -22,18 +22,20 @@
 \newcommand{\coursework}{
 			%Temporary US only coursework section
 			\iftoggle{en}{
-				\majorsection{Relevant Coursework} \halflinebreak\\
+				\majorsection{Coursework} \halflinebreak\\
 				\begin{tabular}{@{}l l@{}}
 				\multicolumn{2}{c}{\large{Fall 2019}}\\
 				LING 570 & Shallow Processing Techniques For Natural Language Processing  \\
-				LING 566 & Introduction To Syntax For Computational Linguistics\vspace{0.1cm} \\
+				LING 566 & Introduction To Syntax For Computational Linguistics \\
+				LING 550 & Introduction To Linguistic Phonetics \vspace{0.15cm} \\
 				\multicolumn{2}{c}{\large{Winter 2020}} \\
 				LING 571 & Deep Processing Techniques for Natural Language Processing  \\
 				LING 572 & Advanced Statistical Methods in Natural Language Processing  \\
-				LING 575 & Analyzing Neural Language Models\vspace{0.1cm} \\
+				LING 575 & Analyzing Neural Language Models\vspace{0.15cm} \\
 				\multicolumn{2}{c}{\large{Spring 2020}} \\
 				LING 573 & Natural Language Processing Systems and Applications \\
 				LING 575 & Clinical Natural Language Processing \\
+				LING 412 & Japanese Syntax And Semantics
 				\end{tabular}
 			}{}
 }
@@ -117,8 +119,8 @@
 		{データサイエンス部からよく来るサポートリクエストを自動化するRuby on Railsウェブアプリケーションに取り組み、多数の新機能を実装}
 		\item \mlt{Wrote or improved Ruby scripts to help with common ops tasks}
 		{よくあるシステム運用の作業に役立つスクリプトを書き、または改善}
-		\item \mlt{Performed troubleshooting and ops work in a Linux environment}
-		{Linuxでシステム運用・保守}
+		\iftoggle{long}{\item \mlt{Performed troubleshooting and ops work in a Linux environment}
+		{Linuxでシステム運用・保守}}{}
 	\end{itemize}}
 }
 
