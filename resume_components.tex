@@ -8,6 +8,7 @@
 \usepackage{fontspec} %Set English font
 \usepackage{tabularx}
 
+
 %https://www.google.com/get/noto/
 \setmainfont[BoldFont=NotoSans-Regular,ItalicFont=NotoSans-LightItalic, BoldItalicFont=NotoSans-Italic]{Noto Sans-Light}
 \setCJKmainfont[BoldFont=NotoSansCJKjp-Regular,AutoFakeSlant=0.15]{Noto Sans CJK JP-Light}
@@ -44,7 +45,7 @@
 
 \newcommand{\majorsection}[1]
 {
-	{\noindent\huge\textcolor{black}{\textbf{#1}}}
+	{\noindent\huge\textcolor{black}{\textbf{#1}}}\\[0.35\baselineskip]
 }
 
 
@@ -82,15 +83,14 @@
 		{\large{\hfil \hfill \textbf{#2}}}
 		\\[0.75\baselineskip]
 		#4
-	\end{minipage}
+	\end{minipage}\\[0.35\baselineskip]
 }
 
 \newcommand{\project}[2]{
 		\noindent\begin{minipage}{\linewidth}
 		{\large\textbf{#1}} \\ 
 		#2
-		\end{minipage}
-		\iftoggle{long}{}{\\[0.5\baselineskip]}
+		\end{minipage}\\[0.35\baselineskip]
 }
 
 \newcommand{\education}[4]{
@@ -99,10 +99,19 @@
 		\iftoggle{ja}{\ifstrempty{#3}{}{\\\textbf{#3}}\\#2}{}
 		\iftoggle{en}{\\\ifstrempty{#3}{#2}{\begin{tabular}{@{}lr@{}}	\textbf{#3} & #2 \end{tabular}}}{}\\
 		#4
-	\end{minipage}
-	\iftoggle{long}{}{\\[0.5\baselineskip]}
+	\end{minipage}\\[0.25\baselineskip]
 }
 
+
+\newcommand{\interpretingexperience}[3]{
+	\noindent\begin{minipage}{\linewidth}
+	\begin{large}
+		\textbf{#1} \\
+	\end{large}
+	#2\\
+	#3
+	\end{minipage}\\[0.35\baselineskip]
+}
 % -------------
 %   Languages
 % --------------

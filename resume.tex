@@ -17,47 +17,7 @@
 \begin{document}
 	
 	
-	% ------
-	% Header
-	% ------
-	\vspace*{-1cm}
-	\noindent
-	\iftoggle{photo}{
-		\begin{tabularx}{\textwidth}{@{}lXr@{}}
-	}{
-		\begin{tabularx}{\textwidth}{@{}lX@{}}
-	}
-			\begin{tabular}{@{}l@{}}
-				{\huge{\textbf{Joshua Tanner}}} \\
-				\mlt{Software Engineer}{システムエンジニア}
-			\end{tabular} &
-			\hfill\begin{tabular}{l@{\hspace{5pt}}l}
-				\faPhone & \phonenumber \\
-				\faEnvelope & \email \\
-				\faGithub & \github \\
-				\faLinkedin & \linkedin \\
-			\end{tabular} 	\iftoggle{photo}{&
-			\begin{tabular}{@{}r@{}}
-					\begin{minipage}{.3\textwidth}
-						\begin{flushright}
-							\medskip
-							\iftoggle{long}{
-								\fbox{\includegraphics[width=2.75cm, height=2.75cm]{photo.jpg}}
-							}{
-								\fbox{\includegraphics[width=2cm, height=2cm]{photo.jpg}}
-							}
-							\medskip
-						\end{flushright}
-					\end{minipage}
-			\end{tabular}}{}
-		\end{tabularx}
-		
-		\iftoggle{photo}{}{
-		\noindent\rule{\linewidth}{1pt}\\
-		}
-		
-	
-		
+	\header{\mlt{Software Engineer}{システムエンジニア}}{\faGithub & \github \\}
 	
 	% ------
 	% Core Resume
@@ -66,18 +26,18 @@
 	\iftoggle{long}{ % --------------------------- LONG -----------------------------------
 		
 		\iftoggle{summary}{
-			\majorsection{\summary} \\
+			\majorsection{\summary} 
 			\summarybody \halflinebreak
 		}{}
 		
 		
-		\majorsection{\experience} \\
+		\majorsection{\experience} 
 		\jobexpGG
 		\jobexpNPD
 		\jobexpGSP
 		\jobexpGDIIntern
 		
-		\majorsection{\skills} \halflinebreak
+		\majorsection{\skills} 
 		
 		\begin{minipage}{0.45\textwidth}
 			\begin{tabular}{l l l}
@@ -105,22 +65,31 @@
 		\end{minipage} \\\halflinebreak
 		
 		
-		\majorsection{\awards} \quarterlinebreak \\
-		\awardAmplify \quarterlinebreak \\
-		\awardGoldenTicket \quarterlinebreak \\
-		\awardEbayApi \halflinebreak
+		\majorsection{\awards} 
+		\awardAmplify 
+		\awardGoldenTicket 
+		\awardEbayApi 
 		
-		\majorsection{\projects} \\
-		\projectParasite \quarterlinebreak \\
-		\projectPytext \halflinebreak
+		\majorsection{\projects} 
+		\projectParasite 
+		\projectPytext 
 		
-		\majorsection{\educationhistory} \quarterlinebreak \\
-		\educationUW \quarterlinebreak \\
-		\educationEvergreen \quarterlinebreak \\
+		\majorsection{\educationhistory} 
+		\educationUW 
+		\educationEvergreen 
 		\educationHyogo
 	}{ %----------------------------- SHORT ---------------------------------------
 		
 		\noindent\begin{minipage}[t]{0.275\textwidth}
+			
+			\sidesection{\educationhistory} \quarterlinebreak\\
+			\educationUW 
+			\educationEvergreen
+			\educationHyogo
+			
+			\sidesection{\coursework} \\
+			\sidebarcoursework
+			
 			
 			\sidesection{\skills} \\ 
 			\textbf{\skillsprogramminglanguages} \\
@@ -148,23 +117,21 @@
 				\skilljapanese
 			\end{tabular} \quarterlinebreak \\
 			
-			\sidesection{\educationhistory} \quarterlinebreak\\
-			\educationUW 
-			\sidebarcoursework
-			\educationEvergreen
-			\educationHyogo
 			
 		\end{minipage}
 		\hfill
 		\begin{minipage}[t]{0.7\textwidth}
-			\majorsection{\experience} \\
+			\majorsection{\experience} 
 			\jobexpEbay
 			\jobexpGDIIntern
-			\majorsection{\projectsawards} \halflinebreak \\
-			\awardAmplify \quarterlinebreak\\
-			\awardGoldenTicket \quarterlinebreak\\
-			%\awardEbayApi
-			\awardParasite
+		\majorsection{\awards} 
+		\awardAmplify 
+		\awardGoldenTicket 
+		\awardEbayApi 
+		
+		\majorsection{\projects} 
+		\projectParasite 
+		\projectPytext 
 		\end{minipage}
 		
 	}

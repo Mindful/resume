@@ -6,39 +6,60 @@
 
 \newcommand{\summary}{\mlt{Summary}{自己紹介}}
 \newcommand{\experience}{\mlt{Experience}{職務経歴}}
+\newcommand{\interpreting}{\mlt{Experience}{通訳実績}}
 \newcommand{\skills}{\mlt{Skills}{技術}}
 \newcommand{\languages}{\mlt{Languages}{言語}}
 \newcommand{\projects}{\mlt{Projects}{個人開発}}
 \newcommand{\awards}{\mlt{Awards}{受賞歴}}
 \newcommand{\projectsawards}{\mlt{Projects and Awards}{受賞歴と個人開発}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
+\newcommand{\coursework}{\mlt{Coursework}{授業}}
 
 \newcommand{\skillsprogramminglanguages}{\mlt{Programming Languages}{プログラミング言語}}
 \newcommand{\skillsframeworks}{\mlt{Frameworks}{フレームワーク}}
 \newcommand{\skillsmisc}{\mlt{Other Technology}{その他の専門技術}}
 \newcommand{\skillslanguage}{\mlt{Natural Languages}{自然言語}}
 
-
-\newcommand{\coursework}{
-			%Temporary US only coursework section
-			\iftoggle{en}{
-				\majorsection{Coursework} \halflinebreak\\
-				\begin{tabular}{@{}l l@{}}
-				\multicolumn{2}{c}{\large{Complete by June 2020}} \\
-				LING 570 & Shallow Processing Techniques for Natural Language Processing  \\
-				LING 566 & Introduction To Syntax for Computational Linguistics \\
-				LING 571 & Deep Processing Techniques for Natural Language Processing  \\
-				LING 572 & Advanced Statistical Methods in Natural Language Processing  \\
-				LING 575 & Analyzing Neural Language Models (seminar) \\
-				LING 573 & Natural Language Processing Systems and Applications \\
-				LING 575 & Clinical Natural Language Processing (seminar) \\
-				LING 412 & Japanese Syntax and Semantics
-				\end{tabular}
-			}{}
+\newcommand{\header}[2]{
+	\vspace*{-1cm}
+	\noindent
+	\iftoggle{photo}{
+		\begin{tabularx}{\textwidth}{@{}lXr@{}}
+	}{
+		\begin{tabularx}{\textwidth}{@{}lX@{}}
+	}
+			\begin{tabular}{@{}l@{}}
+				{\huge{\textbf{Joshua Tanner}}} \\
+				#1
+			\end{tabular} &
+			\hfill\begin{tabular}{l@{\hspace{5pt}}l}
+				\faPhone & \phonenumber \\
+				\faEnvelope & \email \\
+				\faLinkedin & \linkedin \\
+				#2
+			\end{tabular} 	\iftoggle{photo}{&
+			\begin{tabular}{@{}r@{}}
+					\begin{minipage}{.3\textwidth}
+						\begin{flushright}
+							\medskip
+							\iftoggle{long}{
+								\fbox{\includegraphics[width=2.75cm, height=2.75cm]{photo.jpg}}
+							}{
+								\fbox{\includegraphics[width=2cm, height=2cm]{photo.jpg}}
+							}
+							\medskip
+						\end{flushright}
+					\end{minipage}
+			\end{tabular}}{}
+		\end{tabularx}
+		
+		\iftoggle{photo}{}{
+		\noindent\rule{\linewidth}{1pt}\\
+		}
 }
 
 \newcommand{\sidebarcoursework}{
-				\textbf{Coursework (by June 2020):\\}
+				\textbf{(by June 2020):\\}
 				\begin{tabular}{@{}p{\linewidth}@{}}
 				Shallow Processing for NLP  \\
 				Deep Processing for NLP  \\
@@ -48,7 +69,7 @@
 				Information Extraction Seminar \\
 				English Syntactic Theory \\
 				Japanese Syntax and Semantics
-				\end{tabular} \\ \\ \\
+				\end{tabular} \\[0.25\baselineskip]
 }
 
 \newcommand{\summarybody}{\mlt{I’m a software engineer with a focus on backend work and complex systems. Programming has been a hobby for me since long before it became my job, but my passion for quality of work has remained constant. I also have a soft spot for linguistics and enjoy learning languages.}{バックエンド作業と複雑なシステムに取り組む事を楽しめる開発者である。仕事でプログラミングをする前からずっと趣味でコードを書き、コードの質にこだわる事を最初から続けている。言語学と語学にも興味を持つ。}}
@@ -163,7 +184,7 @@
 
 
 \newcommand{\awardGoldenTicket}{
-		\award{\mlt{eBay Innovation Expo Presenter}{eBayイノベーション博覧会の発表者に選出}}
+		\award{\mlt{Innovation Expo Presenter}{イノベーション博覧会の発表者に選出}}
 		{eBay Hack Week}
 		{\mlt{2016/06/24}{2016年06月24日}}
 		{\mlt{One of two teams chosen from among 14 participating in Hack Week to present our work at eBay's Innovation Expo. We developed a Node.js service which selected n-grams from web pages to turn into eBay affiliate links using a heuristic based on relevance to page content.}
@@ -177,6 +198,56 @@
 		{\mlt{Placed first in category among 7 teams by building a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user. }
 		{ユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションをPythonで開発し、部門で7つのチームの中から優勝した。}}
 }
+
+
+
+% Interpreter work
+
+\newcommand{\interpexpSakuraconTwo}{
+	\interpretingexperience{\mlt{Sakura Con 2020}{桜コン2020}}
+	{\mlt{April 2020}{2020年4月}}
+	{\mlt{blah blah blah}
+	{ブラブラブラ}
+	}
+
+}
+
+\newcommand{\interpexpCrunchyrollOne}{
+	\interpretingexperience{\mlt{Crunchyroll Expo 2019}{クランチーロールエキスポ2019}}
+	{\mlt{September 2019}{2019年9月}}
+	{\mlt{blah blah blah}
+	{ブラブラブラ}
+	}
+
+}
+
+\newcommand{\interpexpJonathan}{
+	\interpretingexperience{\mlt{Jonathan Ng Japan Tour}{Jonathan Ng日本ツアー}}
+	{\mlt{August 2019}{2019年8月}}
+	{\mlt{blah blah blah}
+	{ブラブラブラ}
+	}
+
+}
+
+\newcommand{\interpexpSakuraconOne}{
+	\interpretingexperience{\mlt{Sakura Con 2019}{桜コン2019}}
+	{\mlt{April 2019}{2019年4月}}
+	{\mlt{blah blah blah}
+	{ブラブラブラ}
+	}
+
+}
+
+\newcommand{\interpexpGrassroots}{
+	\interpretingexperience{\mlt{28th Annual Grassroots Summit}{第28回日米草の根交流サミット大会}}
+	{\mlt{September 2018}{2018年9月}}
+	{\mlt{blah blah blah}
+	{ブラブラブラ}
+	}
+}
+
+
 
 
 \newcommand{\educationUW}{
