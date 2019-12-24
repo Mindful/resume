@@ -103,13 +103,17 @@
 }
 
 
-\newcommand{\interpretingexperience}[3]{
+\newcommand{\interpretingexperience}[4]{
 	\noindent\begin{minipage}{\linewidth}
-	\begin{large}
-		\textbf{#1} \\
-	\end{large}
-	#2\\
-	#3
+	\begin{tabularx}{\textwidth}{@{}lX@{}}
+		\begin{tabular}[x]{@{}l@{}}
+			\large\textbf{#1} \\
+			#2
+		\end{tabular}
+		&
+		\large{\hfill\textbf{#3}}
+	\end{tabularx}
+	#4
 	\end{minipage}\\[0.35\baselineskip]
 }
 % -------------
