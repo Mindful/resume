@@ -11,11 +11,12 @@
 \newcommand{\languages}{\mlt{Languages}{言語}}
 \newcommand{\projects}{\mlt{Projects}{個人開発}}
 \newcommand{\awards}{\mlt{Awards}{受賞歴}}
-\newcommand{\projectsawards}{\mlt{Projects and Awards}{受賞歴と個人開発}}
+\newcommand{\projectsawards}{\mlt{Awards and Projects}{受賞歴と個人開発}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
-\newcommand{\coursework}{\mlt{Coursework}{授業}}
+\newcommand{\courses}{\mlt{Courses}{授業}}
+\newcommand{\graduatecoursework}{\mlt{Graduate Coursework}{大学院の課題}}
 
-\newcommand{\skillsprogramminglanguages}{\mlt{Programming Languages}{プログラミング言語}}
+\newcommand{\skillsprogramming}{\mlt{Programming}{プログラミング}}
 \newcommand{\skillsframeworks}{\mlt{Frameworks}{フレームワーク}}
 \newcommand{\skillsmisc}{\mlt{Other Technology}{その他の専門技術}}
 \newcommand{\skillslanguage}{\mlt{Natural Languages}{自然言語}}
@@ -59,19 +60,48 @@
 		}
 }
 
+
+\newcommand{\coursemachinelearning}{def}
 \newcommand{\sidebarcoursework}{
-				\textbf{(by June 2020):\\}
+			%	\textbf{\mlt{(by June 2020)}{(2020年6月までに修了)}:\\}
+				\sidesubsection{\mlt{Graduate}{大学院}}\\[0.25\baselineskip]
 				\begin{tabular}{@{}p{\linewidth}@{}}
-				Shallow Processing for NLP  \\
-				Deep Processing for NLP  \\
-				Statistical Methods in NLP  \\
-				NLP Systems and Applications \\
-				BERT/ELMO Analysis Seminar \\
-				Information Extraction Seminar \\
-				English Syntactic Theory \\
-				Japanese Syntax and Semantics
+				\mlt{NLP 1 (Shallow Processing)}{自然言語処理 I（表層処理)}   \\
+				\mlt{NLP 2 (Deep Processing)}{自然言語処理 II (深層処理)}  \\
+				\mlt{Machine Learning for NLP}{自然言語処理向けの機械学習}  \\
+				\mlt{NLP Systems and Applications}{NLPシステムの開発と応用} \\
+				\mlt{Neural Language Models}{ニューラル言語モデルの解析} \\
+				\mlt{Information Extraction}{情報抽出} \\
+				\mlt{English Syntactic Theory}{英語の統語論} \\
+				\mlt{Japanese Syntax and Semantics}{日本語の統語論と意味論}\\
+				\mlt{Phonetics}{音声学}
+				\end{tabular} \\
+			\sidesubsection{\mlt{Undergraduate}{大学}}
+				\begin{tabular}{@{}p{\linewidth}@{}}
+				\mlt{Operating Systems}{オペレーティングシステム}   \\
+				\mlt{Networks}{ネットワーク} \\
+				\mlt{Android Development}{アンドロイド開発} \\
+				\mlt{Japanse 1 \& 2}{日本語　I　＆\& II}
 				\end{tabular} \\[0.25\baselineskip]
 }
+
+%TODO - no japanese on these three
+\newcommand{\courseworkNLP}{
+	\project{NLP 1 \& 2}{
+	\mlt{Implemented NLP algorithms such as n-gram language models, HMM part of speech tagging, probabilistic context free grammar generation and CKY parsing.}
+	{工事中}}
+}
+\newcommand{\courseworkML}{
+	\project{Machine Learning for NLP}{
+	\mlt{Implemented machine learning algorithms for text classification such as decision trees, naive bayes, and KNN. Partial implementations and other work on maximum entropy models, support vector machines and neural networks.}
+	{工事中}}
+}
+\newcommand{\courseworkNLM}{
+	\project{Neural Language Models}{
+	\mlt{Designed an experiment to determine how well BERT and other neural language models comprehend idiom paraphrases, fine tuning the models and training probing classifiers with PyTorch. }
+	{工事中}}
+}
+
 
 \newcommand{\summarybody}{\mlt{I’m a software engineer with a focus on backend work and complex systems. Programming has been a hobby for me since long before it became my job, but my passion for quality of work has remained constant. I also have a soft spot for linguistics and enjoy learning languages.}{バックエンド作業と複雑なシステムに取り組む事を楽しめる開発者である。仕事でプログラミングをする前からずっと趣味でコードを書き、コードの質にこだわる事を最初から続けている。言語学と語学にも興味を持つ。}}
 
@@ -139,6 +169,8 @@
 	\end{itemize}}
 }
 
+
+%TODO english/JP out of sync slightly
 \newcommand{\jobexpGDIIntern}{
 	\jobexperience{\mlt{Intern}{インターン}}
 	{\mlt{Global Data Infrastructure}{国際データインフラ部}}
@@ -146,7 +178,7 @@
 	{\mlt{June 2013}{2013年6月}}
 	{\mlt{September 2014}{2014年9月}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Took ownership of and greatly expanded the functionality of the Ruby on Rails application serving eBay's data science teams, automating common support requests}
+		\item \mlt{Took ownership of and greatly expanded the functionality of the Ruby on Rails application automating common support requests}
 		{データサイエンス部からよく来るサポートリクエストを自動化するRuby on Railsウェブアプリケーションに取り組み、多数の新機能を実装}
 		\item \mlt{Wrote or improved Ruby scripts to help with common ops tasks}
 		{よくあるシステム運用の作業に役立つスクリプトを書き、または改善}
@@ -167,26 +199,31 @@
 	{ユーザーの入力したメッセージをメールとしてSMSゲートウェイに送信する事により、電話番号なしでSMS会話に参加する事を可能にするデスクトップアプリケーションである。一人でPythonで開発した。}}
 }
 
+
+
+%TODO - languages out of sync
 \newcommand{\awardParasite}{
 	\award{Parasite}
 	{\mlt{Personal Project}{個人開発}}
 	{\mlt{2009}{2009年}}
-	{\mlt{A mod for StarCraft 2 which at peak averaged 2 million plays per week.  Written in a combination of a native GUI language and Galaxy, a C-like language. I was responsible for the architecture, design, and vast majority of the code written, eventually onboarding another developer and two community managers.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというC言語系プログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
+	{\mlt{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというC言語系プログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
 }
 
+%TODO: languages may be slightly out of sync here
 \newcommand{\awardAmplify}{
 	\award{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
 	{\mlt{Paper Submission}{論文投稿}}
 	{\mlt{2018/05/7}{2018年5月7日}}
-	{\mlt{Chosen as a presenter for eBay's internal research conference (25\% acceptance rate). NLP research I had conducted as a side project won out over the submissions of full-time researchers.}{eBayの社内学会の登壇者に選ばれた (25％のアクセプト率)。片手間で進めた自然言語処理の研究が本業の研究者の論文と争い、勝ち抜いた。}}
+	{\mlt{A paper based on information extraction research I had done as a side project was accepted at eBay's internal research conference with 25\% acceptance rate.}{片手間で進めた情報抽出の研究に基づいた論文でeBayの社内学会の登壇者に選ばれた (25％のアクセプト率)。}}
 }
 
 
+%TODO: languages out of sync here
 \newcommand{\awardGoldenTicket}{
 		\award{\mlt{Innovation Expo Presenter}{イノベーション博覧会の発表者に選出}}
 		{eBay Hack Week}
 		{\mlt{2016/06/24}{2016年06月24日}}
-		{\mlt{One of two teams chosen from among 14 participating in Hack Week to present our work at eBay's Innovation Expo. We developed a Node.js service which selected n-grams from web pages to turn into eBay affiliate links using a heuristic based on relevance to page content.}
+		{\mlt{Our service which selected n-grams from web pages to turn into affiliate links was one of two chosen to be presented from the 14 candidate projects.}
 		{ウェブページのnグラムをページ内容への関連性に基づくヒューリスティックで選択し、アフィリエイトリンクに変換するNode.jsサービスを開発し、Hack Weekに参加した14チーム中から博覧会で作品を発表する2チームの1つに選ばれた。}}
 }
 
