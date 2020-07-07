@@ -15,11 +15,7 @@
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
 \newcommand{\courses}{\mlt{Courses}{授業}}
 \newcommand{\graduatecoursework}{\mlt{Graduate Coursework}{大学院の課題}}
-
-\newcommand{\skillsprogramming}{\mlt{Programming}{プログラミング}}
-\newcommand{\skillsframeworks}{\mlt{Frameworks}{フレームワーク}}
-\newcommand{\skillsmisc}{\mlt{Other Technology}{その他の専門技術}}
-\newcommand{\skillslanguage}{\mlt{Natural Languages}{自然言語}}
+\newcommand{\skillslanguage}{\mlt{Languages}{言語}}
 
 \newcommand{\header}[2]{
 	\vspace*{-1cm}
@@ -103,7 +99,23 @@
 }
 
 
+
 \newcommand{\summarybody}{\mlt{I’m a software engineer with a focus on backend work and complex systems. Programming has been a hobby for me since long before it became my job, but my passion for quality of work has remained constant. I also have a soft spot for linguistics and enjoy learning languages.}{バックエンド作業と複雑なシステムに取り組む事を楽しめる開発者である。仕事でプログラミングをする前からずっと趣味でコードを書き、コードの質にこだわる事を最初から続けている。言語学と語学にも興味を持つ。}}
+
+\newcommand{\skillsproficient}{\mlt{Proficient}{堪能}}
+\newcommand{\skillsfamiliar}{\mlt{Familiar}{arg2}}
+
+\newcommand{\jobexpOctanoveIntern}{
+	\jobexperienceNoTeam{\mlt{Research Intern}{研究インターン}}
+	{Octanove Labs}
+	{\mlt{June 2020}{2020年6月}}
+	{\mlt{Current}{現在}}
+	%TODO: no JP, also needs update once I finish
+	{\begin{itemize}[noitemsep]
+		\item Train multilingual multitask seq2seq machine learning model to perform translation, grammatical error correction and other language learning related tasks
+		\item Implement an ensemble of language identification models to clean and filter data with heavy code switching
+	\end{itemize}}
+}
 
 \newcommand{\jobexpEbay}{
 	\jobexperience{\mlt{Software Engineer}{システムエンジニア}}
@@ -114,8 +126,8 @@
 	{\begin{itemize}[noitemsep]
 		\item \mlt{Developed from scratch, wrote tests for, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}
 		{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信する分散スケジューラとその自動テストをScalaでゼロから開発し、一人で保守}
-		\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from reviews, using Python and Spacy (based on “RevMiner" paper)}
-		{PythonでSpacyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装 (“RevMiner”という論文に基づき)}
+		\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from reviews, using Python and spaCy (based on “RevMiner" paper)}
+		{PythonでspaCyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装 (“RevMiner”という論文に基づき)}
 		\item \mlt{Rearchitected the pipeline used to import shipping charge data from shipping partners, increasing the accuracy of shipping prices on eBay's search results page by up to 40\%}
 		{提携先の運送会社からデータをインポートするパイプラインを再構築し、eBayの検索結果ページに載る配送料の精度を最大で40％改善}
 		\item \mlt{Drove an effort to automate excessive manual operations work, saving the Global Shipping Program team tens of hours of work per week }
@@ -144,8 +156,8 @@
 	{\mlt{November 2016}{2016年11月}}
 	{\mlt{September 2019}{2019年9月}} 
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from reviews, using Python and Spacy (based on “RevMiner" paper)}
-		{PythonでSpacyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装 (“RevMiner”という論文に基づき)}
+		\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from reviews, using Python and spaCy (based on “RevMiner" paper)}
+		{PythonでspaCyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装 (“RevMiner”という論文に基づき)}
 		\item \mlt{Developed from scratch, wrote tests for, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}
 		{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信する分散スケジューラとその自動テストをScalaでゼロから開発し、一人で保守}
 		\item \mlt{Developed a Ruby on Rails web service that allowed non-technical users to customize and schedule proactive messages from ShopBot to users }
@@ -178,10 +190,9 @@
 	{\mlt{June 2013}{2013年6月}}
 	{\mlt{September 2014}{2014年9月}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Took ownership of and greatly expanded the functionality of the Ruby on Rails application automating common support requests}
+		\item \mlt{Took ownership of and greatly expanded the functionality of a Ruby on Rails application automating Hadoop permissions changes and other operational tasks,  saving tens of hours of work per week}
+		%TODO: out of syncw with JP
 		{データサイエンス部からよく来るサポートリクエストを自動化するRuby on Railsウェブアプリケーションに取り組み、多数の新機能を実装}
-		\item \mlt{Wrote or improved Ruby scripts to help with common ops tasks}
-		{よくあるシステム運用の作業に役立つスクリプトを書き、または改善}
 		\iftoggle{long}{\item \mlt{Performed troubleshooting and ops work in a Linux environment}
 		{Linuxでシステム運用・保守}}{}
 	\end{itemize}}
@@ -284,7 +295,7 @@
 
 
 \newcommand{\educationUW}{
-	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 – 2021/9}{2019年9月 – 2021年9月}}{\mlt{M.S.}{理学修士}}
+	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 – 2022/10}{2019年9月 – 2022年10月}}{\mlt{M.S.}{理学修士}}
 	{\mlt{(Expected) masters degree in computational linguistics.}{(見込み)計算言語学の修士号}}
 }
 \newcommand{\educationEvergreen}{
