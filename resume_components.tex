@@ -117,10 +117,10 @@
 
 \newcommand{\education}[4]{
 	\noindent\begin{minipage}{\linewidth}
-		\noindent\mbox{\iftoggle{long}{\large}{}\textbf{#1}}
-		\iftoggle{ja}{\ifstrempty{#3}{}{\\\textbf{#3}}\\#2}{}
-		\iftoggle{en}{\\\ifstrempty{#3}{#2}{\begin{tabular}{@{}lr@{}}	\textbf{#3} & #2 \end{tabular}}}{}\\
-		#4
+		\iftoggle{long}{\begin{tabularx}{\linewidth}{@{}lX@{}}
+				\large{\textbf{#3}} & \hfill \textbf{#1}
+		\end{tabularx}}{\noindent\mbox{\textbf{#1}}}
+		#2 
 	\end{minipage}\\[0.25\baselineskip]
 }
 

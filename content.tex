@@ -4,6 +4,11 @@
 % Content
 % --------
 
+
+%TODO: check the japanese resume versions
+%TODO: figure out what to do with short resume
+%TODO: individual TODOs below
+
 \newcommand{\summary}{\mlt{Summary}{自己紹介}}
 \newcommand{\experience}{\mlt{Experience}{職務経歴}}
 \newcommand{\interpreting}{\mlt{Experience}{通訳実績}}
@@ -23,14 +28,14 @@
 
 \newcommand{\proficientskills}{
 Python &  spaCy \\ 
-Pytorch & Scala \\
-Java & Ruby  \\ 
+Scala & Java \\
+Ruby &   \\ 
 }
 
 \newcommand{\familiarskills}{
 AllenNLP & fairseq\\
-Ruby on Rails & Play Framework\\
-C++ & SQL \\
+Pytorch & Play Framework\\
+SQL & Ruby on Rails \\
 }
 
 \newcommand{\header}[2]{
@@ -115,7 +120,7 @@ C++ & SQL \\
 }
 
 
-
+%TODO: rewrite this for NLP
 \newcommand{\summarybody}{\mlt{I’m a software engineer with a focus on backend work and complex systems. Programming has been a hobby for me since long before it became my job, but my passion for quality of work has remained constant. I also have a soft spot for linguistics and enjoy learning languages.}{バックエンド作業と複雑なシステムに取り組む事を楽しめる開発者である。仕事でプログラミングをする前からずっと趣味でコードを書き、コードの質にこだわる事を最初から続けている。言語学と語学にも興味を持つ。}}
 
 
@@ -125,17 +130,16 @@ C++ & SQL \\
 	{Octanove Labs}
 	{\mlt{June 2020}{2020年6月}}
 	{\mlt{October 2020}{2020年10月}}
-	%TODO: no JP
 	{\begin{itemize}[noitemsep]
-		\item Train multilingual multitask seq2seq machine learning model to perform translation, grammatical error correction and other language learning related tasks using fairseq
-		\item Implement an ensemble of language identification models to clean and filter data with heavy code switching
+		\item \mlt{Train multilingual multitask seq2seq models for translation and grammatical error correction using fairseq}{fairseqで文法誤り訂正と自動翻訳をする多言語マルチタスクseq2seqモデルを学習}
+		\item \mlt{Implement an ensemble of language identification models to clean and filter data with heavy code switching}{コードスイッチングの多いデータをフィルターしてきれいにするために言語識別モデルのアンサンブルを実装}
 	\end{itemize}}
 }
 
 %-------------eBay---------------------
 
-%TODO: change this so it's clear I was leading development of the scheduler
-\newcommand{\ebayItemScheduler}{\item \mlt{Developed from scratch, wrote tests for, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信する分散スケジューラとその自動テストをScalaでゼロから開発し、一人で保守}}
+
+\newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、一人で保守}}
 
 \newcommand{\ebayItemRevminer}{\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from reviews, using Python and spaCy (based on “RevMiner" paper)}{PythonでspaCyを利用し、レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装 (“RevMiner”という論文に基づき)}}
 
@@ -193,7 +197,6 @@ C++ & SQL \\
 }
 
 
-%TODO english/JP out of sync slightly
 \newcommand{\jobexpGDIIntern}{
 	\jobexperience{\mlt{Intern}{インターン}}
 	{\mlt{Global Data Infrastructure}{国際データインフラ部}}
@@ -202,8 +205,7 @@ C++ & SQL \\
 	{\mlt{September 2014}{2014年9月}}
 	{\begin{itemize}[noitemsep]
 		\item \mlt{Took ownership of and greatly expanded the functionality of a Ruby on Rails application automating Hadoop permissions changes and other operational tasks}
-		%TODO: out of syncw with JP
-		{データサイエンス部からよく来るサポートリクエストを自動化するRuby on Railsウェブアプリケーションに取り組み、多数の新機能を実装}
+		{Hadoopでの権限変更や運用タスクを自動化するRuby on Railsウェブアプリケーションの担当者となり、様々な新機能を開発}
 	\end{itemize}}
 }
 
@@ -306,18 +308,20 @@ C++ & SQL \\
 
 
 \newcommand{\educationUW}{
-	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 – 2021/12}{2019年9月 – 2021年12月}}{\mlt{M.S.}{理学修士}}
+	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 – 2021/12}{2019年9月 – 2021年12月}}{\mlt{M.S. Computational Linguistics}{計算言語学の理学修士}}
 	{\mlt{(Expected) masters degree in computational linguistics.}{(見込み)計算言語学の修士号}}
 }
 \newcommand{\educationEvergreen}{
-	\education{\mlt{The Evergreen State College}{エバーグリーン州立大学}}{\mlt{2012/9 – 2015/4}{2012年9月 – 2015年4月}}{\mlt{B.S.}{理学士}}
+	\education{\mlt{The Evergreen State College}{エバーグリーン州立大学}}{\mlt{2012/9 – 2015/4}{2012年9月 – 2015年4月}}{\mlt{B.S. Computer Science}{コンピュータ科学の理学士}}
 	{\mlt{Graduated early with a major in computer science and a minor in Japanese.}{コンピュータ科学の専攻と日本語の副専攻で早期卒業}}
 }
 
 \newcommand{\educationHyogo}{
-	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2014/4 – 2015/4}{2014年4月 – 2015年4月}}{}
+	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2014/4 – 2015/4}{2014年4月 – 2015年4月}}{\mlt{Exchange Program}{交換留学}}
 	{\mlt{Studied Japanese language in a yearlong exchange program.}{日本語の勉強を中心とした留学プログラム}}
 }
+
+\newcommand{\educationToudai}{def}
 
 \newcommand{\skillenglish}{\mlt{English - Native}{英語 - 母国語}}
 \newcommand{\skilljapanese}{\mlt{Japanese - Fluent (JLPT N1)}{日本語 - 日本語能力試験N1}}
