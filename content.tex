@@ -93,7 +93,7 @@ SQL & Ruby on Rails \\
 				\mlt{Japanese Syntax and Semantics}{日本語の統語論と意味論}\\
 				\mlt{Phonetics}{音声学}
 				\end{tabular} \\
-			\sidesubsection{\mlt{Undergraduate}{大学}}
+			\sidesubsection{\mlt{Undergraduate}{大学}}\\[0.25\baselineskip]
 				\begin{tabular}{@{}p{\linewidth}@{}}
 				\mlt{Operating Systems}{オペレーティングシステム}   \\
 				\mlt{Networks}{ネットワーク} \\
@@ -126,13 +126,14 @@ SQL & Ruby on Rails \\
 
 
 \newcommand{\jobexpOctanoveIntern}{
-	\jobexperienceNoTeam{\mlt{Research Intern}{研究インターン}}
+	\jobexperience{\mlt{Research Intern}{研究インターン}}
+	{}
 	{Octanove Labs}
-	{\mlt{June 2020}{2020年6月}}
-	{\mlt{October 2020}{2020年10月}}
+	{\mlt{2020/6}{2020年6月}}
+	{\mlt{2020/10}{2020年10月}}
 	{\begin{itemize}[noitemsep]
 		\item \mlt{Train multilingual multitask seq2seq models for translation and grammatical error correction using fairseq}{fairseqで文法誤り訂正と自動翻訳をする多言語マルチタスクseq2seqモデルを学習}
-		\item \mlt{Implement an ensemble of language identification models to clean and filter data with heavy code switching}{コードスイッチングの多いデータをフィルターしてきれいにするために言語識別モデルのアンサンブルを実装}
+		\item \mlt{Implement an ensemble of language identification models to clean and filter data with heavy code switching}{コードスイッチングの多いデータをフィルターするために言語識別モデルのアンサンブルを実装}
 	\end{itemize}}
 }
 
@@ -153,11 +154,11 @@ SQL & Ruby on Rails \\
 
 %TODO: here and below in the GSP specific item, 国際出荷管理 is almost certainly wrong. maybe 国際郵送開発？
 \newcommand{\jobexpEbay}{
-	\jobexperience{\mlt{Software Engineer}{システムエンジニア}}
+	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{Global Shipping Program}{国際出荷管理部} \& \mlt{New Product Development}{新商品開発部}}
 	{eBay}
-	{\mlt{September 2015}{2015年9月}}
-	{\mlt{September 2019}{2019年9月}}
+	{\mlt{2015/9}{2015年9月}}
+	{\mlt{2019/9}{2019年9月}}
 	{\begin{itemize}[noitemsep]
 		\ebayItemScheduler
 		\ebayItemRevminer
@@ -170,11 +171,11 @@ SQL & Ruby on Rails \\
 
 
 \newcommand{\jobexpNPD}{
-	\jobexperience{\mlt{Software Engineer}{システムエンジニア}}
+	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{New Product Development \& Global Growth}{新商品開発部 \& グローバル成長部}}
 	{eBay}
-	{\mlt{November 2016}{2016年11月}}
-	{\mlt{September 2019}{2019年9月}} 
+	{\mlt{2016/11}{2016年11月}}
+	{\mlt{2019/9}{2019年9月}} 
 	{\begin{itemize}[noitemsep]
 		\ebayItemScheduler
 		\ebayItemRevminer
@@ -184,11 +185,11 @@ SQL & Ruby on Rails \\
 }
 
 \newcommand{\jobexpGSP}{
-	\jobexperience{\mlt{Software Engineer}{システムエンジニア}}
+	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{Global Shipping Program}{国際出荷管理部}}
 	{eBay}
-	{\mlt{September 2015}{2015年9月}}
-	{\mlt{November 2016}{2016年11月}}
+	{\mlt{2015/9}{2015年9月}}
+	{\mlt{2016/11}{2016年11月}}
 	{\begin{itemize}[noitemsep]
 		\ebayItemHSR
 		\ebayItemJava
@@ -201,8 +202,8 @@ SQL & Ruby on Rails \\
 	\jobexperience{\mlt{Intern}{インターン}}
 	{\mlt{Global Data Infrastructure}{国際データインフラ部}}
 	{eBay}
-	{\mlt{June 2013}{2013年6月}}
-	{\mlt{September 2014}{2014年9月}}
+	{\mlt{2013/6}{2013年6月}}
+	{\mlt{2014/9}{2014年9月}}
 	{\begin{itemize}[noitemsep]
 		\item \mlt{Took ownership of and greatly expanded the functionality of a Ruby on Rails application automating Hadoop permissions changes and other operational tasks}
 		{Hadoopでの権限変更や運用タスクを自動化するRuby on Railsウェブアプリケーションの担当者となり、様々な新機能を開発}
@@ -211,48 +212,43 @@ SQL & Ruby on Rails \\
 
 % ------------ end eBay ------------------
 
-\newcommand{\projectParasite}{
-	\project{Parasite}{
-	\mlt{A mod for StarCraft 2 which at peak averaged 2 million plays per week.  Written in a combination of a native GUI language and Galaxy, a C-like language. I was responsible for the architecture, design, and vast majority of the code written, eventually onboarding another developer and two community managers.}
-	{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというC言語系プログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
-}
-
 \newcommand{\projectPytext}{
-	\project{Pytext}{
-	\mlt{A desktop application written in Python which wraps communication with an email server and use of email to SMS gateways to allow users to participate in SMS conversations without the need for a phone number. }
+	\extra{Pytext}
+	{\mlt{Personal Project}{個人開発}}
+	{\mlt{2013}{2013年}}
+	{\mlt{A desktop application written in Python which wraps communication with an email server and use of email to SMS gateways to allow users to participate in SMS conversations without the need for a phone number. }
 	{ユーザーの入力したメッセージをメールとしてSMSゲートウェイに送信する事により、電話番号なしでSMS会話に参加する事を可能にするデスクトップアプリケーションである。一人でPythonで開発した。}}
 }
 
 
-
-%TODO - languages out of sync
-\newcommand{\awardParasite}{
-	\award{Parasite}
+%TODO - languages out of sync, at least in the shorter case. might not matter?
+\newcommand{\projectParasite}{
+	\extra{Parasite}
 	{\mlt{Personal Project}{個人開発}}
 	{\mlt{2009}{2009年}}
-	{\mlt{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというC言語系プログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
+	{\mlt{\iftoggle{long}{A mod for StarCraft 2 which at peak averaged 2 million plays per week.  Written in a combination of a native GUI language and Galaxy, a C-like language. I was responsible for the architecture, design, and vast majority of the code written, eventually onboarding another developer and two community managers.}
+	{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers.}}
+	{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというC言語系プログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
 }
 
-%TODO: languages may be slightly out of sync here
 \newcommand{\awardAmplify}{
-	\award{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
+	\extra{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
 	{\mlt{Paper Submission}{論文投稿}}
 	{\mlt{2018/05/7}{2018年5月7日}}
-	{\mlt{A paper based on information extraction research I had done as a side project was accepted at eBay's internal research conference with 25\% acceptance rate.}{片手間で進めた情報抽出の研究に基づいた論文でeBayの社内学会の登壇者に選ばれた (25％のアクセプト率)。}}
+	{\mlt{A paper on information extraction research I conducted as a side project was accepted for presentation at eBay's internal research conference (25\% acceptance rate).}{片手間で進めた情報抽出の研究の論文でeBayの社内学会の登壇者に選ばれた (25\%のアクセプト率)。}}
 }
 
 
-%TODO: languages out of sync here
 \newcommand{\awardGoldenTicket}{
-		\award{\mlt{Innovation Expo Presenter}{イノベーション博覧会の発表者に選出}}
+		\extra{\mlt{Innovation Expo Presenter}{イノベーション博覧会の発表者に選出}}
 		{eBay Hack Week}
 		{\mlt{2016/06/24}{2016年06月24日}}
-		{\mlt{Our service which selected n-grams from web pages to turn into affiliate links was one of two chosen to be presented from the 14 candidate projects.}
-		{ウェブページのnグラムをページ内容への関連性に基づくヒューリスティックで選択し、アフィリエイトリンクに変換するNode.jsサービスを開発し、Hack Weekに参加した14チーム中から博覧会で作品を発表する2チームの1つに選ばれた。}}
+		{\mlt{Our hackathon team's Node.js service which turned representative n-grams from web pages into affiliate links was chosen for presentation at eBay's internal innovation expo (14\% acceptance rate).}
+		{ハッカソンのチームで開発した、ページ内容と関連性の高いnグラムをアフィリエイトリンクに変換するNode.jsサービスが社内イノベーション博覧会での発表に選ばれた(14\%のアクセプト率)。}}
 }
 
 \newcommand{\awardEbayApi}{
-		\award{\mlt{Best eBay API Integration}{eBay API利用部門で優勝}}
+		\extra{\mlt{Best eBay API Integration}{eBay API利用部門で優勝}}
 		{2013 CodeDay Seattle}
 		{\mlt{2013/05/26}{2013年05月26日}}
 		{\mlt{Placed first in category among 7 teams by building a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user. }
@@ -274,7 +270,7 @@ SQL & Ruby on Rails \\
 
 \newcommand{\interpexpCrunchyrollOne}{
 	\interpretingexperience{\mlt{Crunchyroll Expo 2019}{クランチーロールエキスポ2019}}
-	{\mlt{September 2019}{2019年9月}}
+	{\mlt{2019/9}{2019年9月}}
 	{\mlt{Consecutive Interpretation}{逐次通訳}}
 	{\mlt{Accompanied visiting composer Yasuharu Takanashi for the duration of the conference, interpreting panel presentations, press interviews, and convresations with even staff.}
 	{大会の期間中、来客された作曲の高梨康治に同行し、パネル発表、記者会見、イベントスタフとの会話を通訳}}
@@ -282,7 +278,7 @@ SQL & Ruby on Rails \\
 
 \newcommand{\interpexpJonathan}{
 	\interpretingexperience{\mlt{Jonathan Ng Japan Tour}{Jonathan Ng日本ツアー}}
-	{\mlt{August 2019}{2019年8月}}
+	{\mlt{2019/8}{2019年8月}}
 	{\mlt{Consecutive Interpretation, Translation}{逐次通訳、翻訳}}
 	{\mlt{Accompanied jazz musician Jonathan Ng for the duration of his Japan tour, interpreting conversations between him and Japnese musicians and translating email correspondances.}
 	{日本ツアーの期間中、ジャズミュージシャンのJonathan Ngに同行し、日本人の演奏者との会話を通訳し、メールのやりとりも翻訳}}
@@ -290,7 +286,7 @@ SQL & Ruby on Rails \\
 
 \newcommand{\interpexpSakuraconOne}{
 	\interpretingexperience{\mlt{Sakura Con 2019}{桜コン2019}}
-	{\mlt{April 2019}{2019年4月}}
+	{\mlt{2019/9}{2019年4月}}
 	{\mlt{Consecutive Interpretation}{逐次通訳}}
 	{\mlt{Accompanied visiting fashion designer for the duration of the conference, interpreting conversations with event staff and models.}
 	{大会の期間中、来客されたファションデザイナーに同行し、イベントスタフやモデルとの会話を通訳}}
@@ -298,7 +294,7 @@ SQL & Ruby on Rails \\
 
 \newcommand{\interpexpGrassroots}{
 	\interpretingexperience{\mlt{28th Annual Grassroots Summit}{第28回日米草の根交流サミット大会}}
-	{\mlt{September 2018}{2018年9月}}
+	{\mlt{2018/9}{2018年9月}}
 	{\mlt{Consecutive Interpretation}{逐次通訳}}
 	{\mlt{Intrepreted explanations of historic Seattle buildings into Japanese and interpreted for the tourist activities of visiting students and faculty.}
 	{シアトルの歴史的な建物の説明を日本語に通訳し、訪米中の教員と学生たちの観光に必要な会話も通訳}}
@@ -308,20 +304,23 @@ SQL & Ruby on Rails \\
 
 
 \newcommand{\educationUW}{
-	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 – 2021/12}{2019年9月 – 2021年12月}}{\mlt{M.S. Computational Linguistics}{計算言語学の理学修士}}
-	{\mlt{(Expected) masters degree in computational linguistics.}{(見込み)計算言語学の修士号}}
+	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 - 2021/12}{2019年9月 - 2021年12月}}{\mlt{M.S. \iftoggle{long}{Computational Linguistics}{Comp. Linguistics}}{計算言語学の理学修士}}
+	{\mlt{Coursework in machine learning and natural language processing.}{機械学習と自然言語処理を中心とした修士課程}}
 }
 \newcommand{\educationEvergreen}{
-	\education{\mlt{The Evergreen State College}{エバーグリーン州立大学}}{\mlt{2012/9 – 2015/4}{2012年9月 – 2015年4月}}{\mlt{B.S. Computer Science}{コンピュータ科学の理学士}}
+	\education{\mlt{The Evergreen State College}{エバーグリーン州立大学}}{\mlt{2012/9 - 2015/4}{2012年9月 - 2015年4月}}{\mlt{B.S. Computer Science}{計算機科学の理学士}}
 	{\mlt{Graduated early with a major in computer science and a minor in Japanese.}{コンピュータ科学の専攻と日本語の副専攻で早期卒業}}
 }
 
 \newcommand{\educationHyogo}{
-	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2014/4 – 2015/4}{2014年4月 – 2015年4月}}{\mlt{Exchange Program}{交換留学}}
+	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2014/4 - 2015/4}{2014年4月 - 2015年4月}}{\mlt{Exchange Program}{交換留学}}
 	{\mlt{Studied Japanese language in a yearlong exchange program.}{日本語の勉強を中心とした留学プログラム}}
 }
 
-\newcommand{\educationToudai}{def}
+\newcommand{\educationToudai}{
+	\education{\mlt{University of Tokyo}{東京大学}}{\mlt{2020/12 - 2021/12}{2014年4月 - 2015年4月}}{\mlt{Research Practicum}{研究実習}}
+	{\mlt{Natural language processing research at the Institute of Industrial Science.}{東京大学生産技術研究所で自然言語処理の研究実習}}
+}
 
 \newcommand{\skillenglish}{\mlt{English - Native}{英語 - 母国語}}
 \newcommand{\skilljapanese}{\mlt{Japanese - Fluent (JLPT N1)}{日本語 - 日本語能力試験N1}}
