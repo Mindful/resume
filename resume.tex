@@ -3,28 +3,17 @@
 \input{pii.tex}
 
 
-% ------------
-% Toggles 
-% -----------
-
-\newtoggle{useja} % just to make life easier
-\togglefalse{useja}
-
-\iftoggle{useja}{
-	\toggletrue{ja}
-	\togglefalse{en}
-}{
-	\togglefalse{ja}
-	\toggletrue{en}
-}
-
-
-\togglefalse{photo}
-\toggletrue{long}
-\togglefalse{summary}
 
 
 \begin{document}
+	
+	\iftoggle{useja}{
+		\toggletrue{ja}
+		\togglefalse{en}
+	}{
+		\togglefalse{ja}
+		\toggletrue{en}
+	}
 	
 	
 	\header{\mlt{NLP Engineer}{NLPエンジニア}}{\faGithub & \github \\}

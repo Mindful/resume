@@ -2,6 +2,8 @@
 *.log
 *.synctex.gz
 *.DS_Store
+*.out
 photo.jpg
 *.pdf
+!pdfs/*nopii*.pdf
 pxrubrica.sty

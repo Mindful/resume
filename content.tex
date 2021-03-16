@@ -52,10 +52,10 @@ SQL & Ruby on Rails \\
 				#1
 			\end{minipage} &
 			\hfill\begin{tabular}{l@{\hspace{5pt}}l}
-				\faPhone & \phonenumber \\
+				\iftoggle{pii}{\faPhone & \phonenumber \\
 				\faEnvelope & \email \\
 				\faLinkedin & \linkedin \\
-				#2
+				#2}{}
 			\end{tabular} 	\iftoggle{photo}{&
 			\begin{tabular}{@{}r@{}}
 					\begin{minipage}{.3\textwidth}
@@ -93,7 +93,7 @@ SQL & Ruby on Rails \\
 				\mlt{Japanese Syntax and Semantics}{日本語の統語論と意味論}\\
 				\mlt{Phonetics}{音声学}
 				\end{tabular} \\
-			\sidesubsection{\mlt{Undergraduate}{大学}}\\[0.25\baselineskip]
+			\sidesubsection{\mlt{Undergraduate}{大学}}
 				\begin{tabular}{@{}p{\linewidth}@{}}
 				\mlt{Operating Systems}{オペレーティングシステム}   \\
 				\mlt{Networks}{ネットワーク} \\
