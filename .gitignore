@@ -7,3 +7,4 @@ photo.jpg
 *.pdf
 !pdfs/*nopii*.pdf
 pxrubrica.sty
+pii.tex

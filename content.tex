@@ -5,10 +5,6 @@
 % --------
 
 
-%TODO: check the japanese resume versions
-%TODO: figure out what to do with short resume
-%TODO: individual TODOs below
-
 \newcommand{\summary}{\mlt{Summary}{自己紹介}}
 \newcommand{\experience}{\mlt{Experience}{職務経歴}}
 \newcommand{\interpreting}{\mlt{Experience}{通訳実績}}
@@ -22,9 +18,9 @@
 \newcommand{\graduatecoursework}{\mlt{Graduate Coursework}{大学院の課題}}
 \newcommand{\skillslanguage}{\mlt{Languages}{言語}}
 
-%TODO: fix the japanese here
-\newcommand{\skillsproficient}{\mlt{Proficient}{堪能}}
-\newcommand{\skillsfamiliar}{\mlt{Familiar}{arg2}}
+
+\newcommand{\skillsproficient}{\mlt{Proficient}{経験豊富}}
+\newcommand{\skillsfamiliar}{\mlt{Familiar}{経験あり}}
 
 \newcommand{\proficientskills}{
 Python &  spaCy \\ 
@@ -34,8 +30,8 @@ Ruby &   \\
 
 \newcommand{\familiarskills}{
 AllenNLP & Pytorch \\
-fairseq & Play Framework\\
-SQL & Ruby on Rails \\
+Play Framework & SQL \\
+Ruby on Rails \\
 }
 
 \newcommand{\header}[2]{
@@ -93,7 +89,7 @@ SQL & Ruby on Rails \\
 				\mlt{Japanese Syntax and Semantics}{日本語の統語論と意味論}\\
 				\mlt{Phonetics}{音声学}
 				\end{tabular} \\
-			\sidesubsection{\mlt{Undergraduate}{大学}}
+			\sidesubsection{\mlt{Undergraduate}{大学}}\\[0.25\baselineskip]
 				\begin{tabular}{@{}p{\linewidth}@{}}
 				\mlt{Operating Systems}{オペレーティングシステム}   \\
 				\mlt{Networks}{ネットワーク} \\
@@ -102,26 +98,24 @@ SQL & Ruby on Rails \\
 				\end{tabular} \\[0.25\baselineskip]
 }
 
-%TODO - no japanese on these three
 \newcommand{\courseworkNLP}{
 	\project{NLP 1 \& 2}{
 	\mlt{Implemented NLP algorithms such as n-gram language models, HMM part of speech tagging, probabilistic context free grammar generation and CKY parsing.}
-	{工事中}}
+	{nグラム言語モデル、隠れマルコフモデル品詞付、確率文脈自由文法、CKYパーシングを含め自然言語処理のアルゴリズムを実装した。}}
 }
 \newcommand{\courseworkML}{
 	\project{Machine Learning for NLP}{
 	\mlt{Implemented machine learning algorithms for text classification such as decision trees, naive bayes, and KNN. Partial implementations and other work on maximum entropy models, support vector machines and neural networks.}
-	{工事中}}
+	{決定木、単純ベイズ、k近傍法を含め機械学習アルゴリズムをテキスト分類に適応させて実装した。また、サポートベクターマシンやニューラルネットワークの一部分を実装した。}}
 }
 \newcommand{\courseworkNLM}{
 	\project{Neural Language Models}{
-	\mlt{Designed an experiment to determine how well BERT and other neural language models comprehend idiom paraphrases, fine tuning the models and training probing classifiers with PyTorch. }
-	{工事中}}
+	\mlt{Designed an experiment to determine how well BERT comprehends idiom paraphrases, fine tuning the models and training probing classifiers with PyTorch. }
+	{BERTの慣用句のパラフレーズに対する理解度を測る実験のため、PyTorchでプロービング分類器を学習させてBERTをファインチューニングした。}}
 }
 
 
-%TODO: rewrite this for NLP
-\newcommand{\summarybody}{\mlt{I’m a software engineer with a focus on backend work and complex systems. Programming has been a hobby for me since long before it became my job, but my passion for quality of work has remained constant. I also have a soft spot for linguistics and enjoy learning languages.}{バックエンド作業と複雑なシステムに取り組む事を楽しめる開発者である。仕事でプログラミングをする前からずっと趣味でコードを書き、コードの質にこだわる事を最初から続けている。言語学と語学にも興味を持つ。}}
+\newcommand{\summarybody}{\mlt{I'm a software engineer with a focus on natural language processing and backend engineering. Programming and languages were both hobbies for me long before they became part of work, and that passion continues to fuel me professionally.}{自然言語処理とバックエンドに精通しているソフトウェアエンジニアである。プログラミングも言語も仕事に関わる前からずっと好きであり、その情熱を仕事に向けて活動している。}}
 
 
 
@@ -132,8 +126,8 @@ SQL & Ruby on Rails \\
 	{\mlt{2020/6}{2020年6月}}
 	{\mlt{2020/10}{2020年10月}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Train multilingual multitask seq2seq models for translation and grammatical error correction using fairseq}{fairseqで文法誤り訂正と自動翻訳をする多言語マルチタスクseq2seqモデルを学習}
-		\item \mlt{Implement an ensemble of language identification models to clean and filter data with heavy code switching}{コードスイッチングの多いデータをフィルターするために言語識別モデルのアンサンブルを実装}
+		\item \mlt{Trained seq2seq models for translation and grammatical error correction using fairseq}{fairseqで文法誤り訂正と自動翻訳をする多seq2seqモデルを学習}
+		\item \mlt{Implemented an ensemble of language identification models to filter data with heavy code switching}{コードスイッチングの多いデータをフィルターするために言語識別モデルのアンサンブルを実装}
 	\end{itemize}}
 }
 
@@ -152,10 +146,10 @@ SQL & Ruby on Rails \\
 
 
 
-%TODO: here and below in the GSP specific item, 国際出荷管理 is almost certainly wrong. maybe 国際郵送開発？
+
 \newcommand{\jobexpEbay}{
 	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
-	{\mlt{Global Shipping Program}{国際出荷管理部} \& \mlt{New Product Development}{新商品開発部}}
+	{\mlt{Global Shipping Program}{国際配送管理部} \& \mlt{New Product Development}{新商品開発部}}
 	{eBay}
 	{\mlt{2015/9}{2015年9月}}
 	{\mlt{2019/9}{2019年9月}}
@@ -186,7 +180,7 @@ SQL & Ruby on Rails \\
 
 \newcommand{\jobexpGSP}{
 	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
-	{\mlt{Global Shipping Program}{国際出荷管理部}}
+	{\mlt{Global Shipping Program}{国際配送管理部}}
 	{eBay}
 	{\mlt{2015/9}{2015年9月}}
 	{\mlt{2016/11}{2016年11月}}
@@ -205,7 +199,7 @@ SQL & Ruby on Rails \\
 	{\mlt{2013/6}{2013年6月}}
 	{\mlt{2014/9}{2014年9月}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Took ownership of and greatly expanded the functionality of a Ruby on Rails application automating Hadoop permissions changes and other operational tasks}
+		\item \mlt{Owned and greatly expanded the functionality of a Ruby on Rails application automating Hadoop permissions changes and other operational tasks}
 		{Hadoopでの権限変更や運用タスクを自動化するRuby on Railsウェブアプリケーションの担当者となり、様々な新機能を開発}
 	\end{itemize}}
 }
@@ -221,21 +215,18 @@ SQL & Ruby on Rails \\
 }
 
 
-%TODO - languages out of sync, at least in the shorter case. might not matter?
 \newcommand{\projectParasite}{
 	\extra{Parasite}
 	{\mlt{Personal Project}{個人開発}}
 	{\mlt{2009}{2009年}}
-	{\mlt{\iftoggle{long}{A mod for StarCraft 2 which at peak averaged 2 million plays per week.  Written in a combination of a native GUI language and Galaxy, a C-like language. I was responsible for the architecture, design, and vast majority of the code written, eventually onboarding another developer and two community managers.}
-	{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers.}}
-	{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODである。専用のGUIプログラミング言語とGalaxyというC言語系プログラミング言語で開発を行った。一人で設計とデザインを考え出し、コードの大部分も一人で書いた。後でもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
+	{\mlt{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers to help maintain it.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
 }
 
 \newcommand{\awardAmplify}{
 	\extra{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
 	{\mlt{Paper Submission}{論文投稿}}
 	{\mlt{2018/05/7}{2018年5月7日}}
-	{\mlt{A paper on information extraction research I conducted as a side project was accepted for presentation at eBay's internal research conference (25\% acceptance rate).}{片手間で進めた情報抽出の研究の論文でeBayの社内学会の登壇者に選ばれた (25\%のアクセプト率)。}}
+	{\mlt{Information extraction research I conducted as a side project was accepted for presentation at eBay's internal research conference (25\% acceptance rate).}{片手間で進めた情報抽出の研究でeBayの社内学会の登壇者に選ばれた (25\%のアクセプト率)。}}
 }
 
 

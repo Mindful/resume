@@ -2,6 +2,8 @@
 \input{content.tex}
 \input{pii.tex}
 
+\toggletrue{pii}
+
 
 
 
@@ -57,13 +59,13 @@
 		\noindent\begin{minipage}{\linewidth}
 			\majorsection{\skills} 
 			\begin{minipage}{0.45\textwidth}
-				\textbf{Proficient}:\\[0.25\baselineskip]
+				\textbf{\skillsproficient}:\\[0.25\baselineskip]
 				\begin{tabular}{l l}
 					\proficientskills
 				\end{tabular} \halflinebreak
 			\end{minipage}
 			\begin{minipage}{0.45\textwidth}
-				\textbf{Familiar}: \\[0.25\baselineskip]
+				\textbf{\skillsfamiliar}: \\[0.25\baselineskip]
 				\begin{tabular}{l l} 
 					\familiarskills
 				\end{tabular} \halflinebreak
@@ -87,8 +89,6 @@
 		
 
 	}{ %----------------------------- SHORT ---------------------------------------
-	
-		%TODO missing octanove, full of coursework for internships
 		
 		\noindent\begin{minipage}[t]{0.275\textwidth}
 			
@@ -98,22 +98,22 @@
 			\educationEvergreen
 			\educationHyogo
 			
-			\sidesection{\courses} \\
+			\sidesection{\courses} \\[0.25\baselineskip]
 			\sidebarcoursework
 			
 			
-			\sidesection{\skills} \\ 
-			Proficient:\\[0.25\baselineskip]
+			\sidesection{\skills} \\[0.25\baselineskip]
+			\textbf{\skillsproficient}:\\[0.25\baselineskip]
 			\begin{tabular}{l l}
 				\proficientskills
 			\end{tabular}\\
-			Familiar: \\[0.25\baselineskip]
+			\textbf{\skillsfamiliar}: \\[0.25\baselineskip]
 			\begin{tabular}{l l} 
 				\familiarskills
 			\end{tabular}
 
 			
-			\sidesection{\skillslanguage} \\
+			\sidesection{\skillslanguage} \\[0.25\baselineskip]
 			\begin{tabular}{l}
 				\skillenglish \\
 				\skilljapanese
@@ -133,7 +133,7 @@
 		\courseworkNLM
 		\courseworkNLP
 
-		\majorsection{\projectsawards\vspace{-0.25\baselineskip}} 
+		\majorsection{\projectsawards} 
 		\awardAmplify 
 		\awardGoldenTicket 
 		\projectParasite

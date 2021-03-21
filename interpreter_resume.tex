@@ -7,12 +7,17 @@
 % Toggles 
 % -----------
 
-\togglefalse{ja}
-\toggletrue{en}
-\togglefalse{photo}
-
+\toggletrue{long} % so we get longer versions of the education section
 
 \begin{document}
+	
+	\iftoggle{useja}{
+		\toggletrue{ja}
+		\togglefalse{en}
+	}{
+		\togglefalse{ja}
+		\toggletrue{en}
+	}
 	
 	
 	\header{\mlt{Interpreter \& Technical Translator}{通訳者 \& 技術翻訳者}}{}
