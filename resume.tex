@@ -5,8 +5,6 @@
 \toggletrue{pii}
 
 
-
-
 \begin{document}
 	
 	\iftoggle{useja}{
@@ -21,74 +19,9 @@
 	\header{\mlt{NLP Engineer}{NLPエンジニア}}{\faGithub & \github \\}
 	
 	
-	
 	% ------
 	% Core Resume
 	% -------
-	
-	\iftoggle{long}{ % --------------------------- LONG -----------------------------------
-		
-		\iftoggle{summary}{
-			\majorsection{\summary} 
-			\summarybody \halflinebreak
-		}{}
-		
-		\noindent\begin{minipage}{\linewidth}
-			\majorsection{\experience}
-			\jobexpOctanoveIntern
-			\jobexpNPD
-			\jobexpGSP
-			\jobexpGDIIntern
-		\end{minipage}
-		
-		\noindent\begin{minipage}{\linewidth}
-			\majorsection{\educationhistory} 
-			\educationUW 
-			\educationToudai
-			\educationEvergreen 
-			\educationHyogo
-		\end{minipage}
-		
-		\noindent\begin{minipage}{\linewidth}
-			\majorsection{\awards} 
-			\awardAmplify 
-			\awardGoldenTicket 
-			\awardEbayApi 
-		\end{minipage}
-		
-		\noindent\begin{minipage}{\linewidth}
-			\majorsection{\skills} 
-			\begin{minipage}{0.45\textwidth}
-				\textbf{\skillsproficient}:\\[0.25\baselineskip]
-				\begin{tabular}{l l}
-					\proficientskills
-				\end{tabular} \halflinebreak
-			\end{minipage}
-			\begin{minipage}{0.45\textwidth}
-				\textbf{\skillsfamiliar}: \\[0.25\baselineskip]
-				\begin{tabular}{l l} 
-					\familiarskills
-				\end{tabular} \halflinebreak
-			\end{minipage} \\\\
-		\end{minipage}
-		
-		\noindent\begin{minipage}{\linewidth}
-		\majorsection{\skillslanguage}
-			\begin{tabular}{l}
-				\skillenglish \\
-				\skilljapanese
-			\end{tabular}  \halflinebreak
-		\\
-		\end{minipage}
-		
-		\noindent\begin{minipage}{\linewidth}
-		\majorsection{\projects} 
-		\projectParasite 
-		\projectPytext 
-		\end{minipage}
-		
-
-	}{ %----------------------------- SHORT ---------------------------------------
 		
 		\noindent\begin{minipage}[t]{0.275\textwidth}
 			
@@ -140,6 +73,6 @@
 		
 		\end{minipage}
 		
-	}
+	
 	
 \end{document}

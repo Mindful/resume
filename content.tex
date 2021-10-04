@@ -14,7 +14,7 @@
 \newcommand{\awards}{\mlt{Awards}{受賞歴}}
 \newcommand{\projectsawards}{\mlt{Awards and Projects}{受賞歴と個人開発}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
-\newcommand{\courses}{\mlt{Courses}{授業}}
+\newcommand{\courses}{\mlt{Courses}{学業}}
 \newcommand{\graduatecoursework}{\mlt{Graduate Coursework}{大学院の課題}}
 \newcommand{\skillslanguage}{\mlt{Languages}{言語}}
 
@@ -24,14 +24,13 @@
 
 \newcommand{\proficientskills}{
 Python &  spaCy \\ 
-Scala & Java \\
-Ruby &   \\ 
+PyTorch & Scala \\
+Java & Ruby  \\ 
 }
 
 \newcommand{\familiarskills}{
-AllenNLP & Pytorch \\
-Play Framework & SQL \\
-Ruby on Rails \\
+Rust & SQL \\
+Play Framework & Ruby on Rails\\
 }
 
 \newcommand{\header}[2]{
@@ -57,11 +56,7 @@ Ruby on Rails \\
 					\begin{minipage}{.3\textwidth}
 						\begin{flushright}
 							\medskip
-							\iftoggle{long}{
-								\fbox{\includegraphics[width=2.75cm, height=2.75cm]{photo.jpg}}
-							}{
-								\fbox{\includegraphics[width=2cm, height=2cm]{photo.jpg}}
-							}
+							\fbox{\includegraphics[width=2cm, height=2cm]{photo.jpg}}
 							\medskip
 						\end{flushright}
 					\end{minipage}
@@ -120,14 +115,15 @@ Ruby on Rails \\
 
 
 \newcommand{\jobexpOctanoveIntern}{
-	\jobexperience{\mlt{Research Intern}{研究インターン}}
-	{}
-	{Octanove Labs}
-	{\mlt{2020/6}{2020年6月}}
-	{\mlt{2020/10}{2020年10月}}
+	\jobexperience{\mlt{Graduate Intern}{大学院生インターン}}
+	{\mlt{Research \& Infrastructure}{研究 \& インフラ}}
+	{\href{https://www.octanove.com/}{Octanove Labs}, \href{https://fuku-inc.com/}{Fuku Inc}, \href{\mlt{https://mantra.co.jp/}{https://mantra.co.jp/index_en.html}}{Mantra Inc}}
+	{\mlt{2020}{2020年}}
+	{\mlt{2021}{2021年}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Trained seq2seq models for translation and grammatical error correction using fairseq}{fairseqで文法誤り訂正と自動翻訳をする多seq2seqモデルを学習}
-		\item \mlt{Implemented an ensemble of language identification models to filter data with heavy code switching}{コードスイッチングの多いデータをフィルターするために言語識別モデルのアンサンブルを実装}
+		\item \mlt{Implemented an efficient character-level transformer from \href{https://arxiv.org/pdf/2103.06874.pdf}{recent research} in PyTorch, pre-trained it for Japanese, and \href{https://github.com/octanove/shiba}{open sourced it}}{arg2}
+		\item \mlt{Rewrote information extraction pipeline using spaCy, increasing micro f1 by more than 20 points}{spaCyを用いて情報抽出のパイプラインを書き直し、F値のマイクロ平均を20点以上改善}
+		\item \mlt{Set up logging and monitoring using AWS and Sentry}{ベンチャーでロギングとモニタリングの}
 	\end{itemize}}
 }
 
@@ -136,7 +132,7 @@ Ruby on Rails \\
 
 \newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、一人で保守}}
 
-\newcommand{\ebayItemRevminer}{\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from product reviews, using Python and spaCy (based on “RevMiner" paper)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装 (“RevMiner”という論文に基づき)}}
+\newcommand{\ebayItemRevminer}{\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from product reviews, using Python and spaCy (based on “\href{http://turing.cs.washington.edu/papers/uist12-huang.pdf}{RevMiner}" paper)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
 
 \newcommand{\ebayItemHSR}{\item \mlt{Rearchitected the pipeline used to import shipping charge data from shipping partners, increasing the accuracy of international shipping prices on eBay's search results page by up to 40\%}{提携先の運送会社からデータをインポートするパイプラインを再構築し、eBayの検索結果ページに載る国際配送料の精度を最大で40％改善}}
 
@@ -150,7 +146,7 @@ Ruby on Rails \\
 \newcommand{\jobexpEbay}{
 	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{Global Shipping Program}{国際配送管理部} \& \mlt{New Product Development}{新商品開発部}}
-	{eBay}
+	{\href{https://www.ebay.com/}{eBay}}
 	{\mlt{2015/9}{2015年9月}}
 	{\mlt{2019/9}{2019年9月}}
 	{\begin{itemize}[noitemsep]
@@ -167,7 +163,7 @@ Ruby on Rails \\
 \newcommand{\jobexpNPD}{
 	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{New Product Development \& Global Growth}{新商品開発部 \& グローバル成長部}}
-	{eBay}
+	{\href{https://www.ebay.com/}{eBay}}
 	{\mlt{2016/11}{2016年11月}}
 	{\mlt{2019/9}{2019年9月}} 
 	{\begin{itemize}[noitemsep]
@@ -181,7 +177,7 @@ Ruby on Rails \\
 \newcommand{\jobexpGSP}{
 	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{Global Shipping Program}{国際配送管理部}}
-	{eBay}
+	{\href{https://www.ebay.com/}{eBay}}
 	{\mlt{2015/9}{2015年9月}}
 	{\mlt{2016/11}{2016年11月}}
 	{\begin{itemize}[noitemsep]
@@ -195,7 +191,7 @@ Ruby on Rails \\
 \newcommand{\jobexpGDIIntern}{
 	\jobexperience{\mlt{Intern}{インターン}}
 	{\mlt{Global Data Infrastructure}{国際データインフラ部}}
-	{eBay}
+	{\href{https://www.ebay.com/}{eBay}}
 	{\mlt{2013/6}{2013年6月}}
 	{\mlt{2014/9}{2014年9月}}
 	{\begin{itemize}[noitemsep]
@@ -219,7 +215,7 @@ Ruby on Rails \\
 	\extra{Parasite}
 	{\mlt{Personal Project}{個人開発}}
 	{\mlt{2009}{2009年}}
-	{\mlt{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers to help maintain it.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
+	{\mlt{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers to help.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
 }
 
 \newcommand{\awardAmplify}{
@@ -303,7 +299,7 @@ Ruby on Rails \\
 
 
 \newcommand{\educationUW}{
-	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 - 2021/12}{2019年9月 - 2021年12月}}{\mlt{M.S. \iftoggle{long}{Computational Linguistics}{Comp. Linguistics}}{計算言語学の理学修士}}
+	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 - 2021/12}{2019年9月 - 2021年12月}}{\mlt{M.S. Comp. Linguistics}{計算言語学の理学修士}}
 	{\mlt{Coursework in machine learning and natural language processing.}{機械学習と自然言語処理を中心とした修士課程}}
 }
 \newcommand{\educationEvergreen}{

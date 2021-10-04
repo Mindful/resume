@@ -71,7 +71,7 @@
 				\large\textbf{#1} & 
 				\hfill \begin{tabular}[x]{@{}l@{}}
 					 {\large\hfill\textbf{#3}} \\
-					#4 - #5 \\
+					\hfill#4 - #5 \\
 				\end{tabular}
 		\end{tabularx}\vspace{-8pt}}
 		{\begin{tabularx}{\textwidth}{@{}lX@{}}
@@ -100,10 +100,7 @@
 
 \newcommand{\education}[4]{
 	\noindent\begin{minipage}{\linewidth}
-		\iftoggle{long}{\begin{tabularx}{\linewidth}{@{}lX@{}}
-				{\large\textbf{#3}} & \hfill \textbf{#1}\\
-				#4 & \hfill #2\\
-		\end{tabularx}}{{\large\textbf{#3}} \\\textbf{#1}\\#2\vspace*{0.05cm}}
+		{\large\textbf{#3}} \\\textbf{#1}\\#2\vspace*{0.05cm}
 	\end{minipage}\\[0.25\baselineskip]
 }
 
