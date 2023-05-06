@@ -4,6 +4,10 @@ from shutil import copyfile
 from os import remove
 from os.path import exists
 
+if not exists('pii.tex'):
+	print('Missing pii.tex, aborting')
+	exit(1)
+
 toggle_placeholder = r'%TOGGLES%'
 file_placeholder = r'%FILE%'
 base_compile_string = r'\AtBeginDocument{' + toggle_placeholder + r'}\input{' + file_placeholder + '}'
