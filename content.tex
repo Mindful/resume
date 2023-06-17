@@ -9,9 +9,10 @@
 \newcommand{\experience}{\mlt{Experience}{職務経歴}}
 \newcommand{\interpreting}{\mlt{Experience}{通訳実績}}
 \newcommand{\languages}{\mlt{Languages}{言語}}
-%\newcommand{\projectsawards}{\mlt{Awards and Projects}{受賞歴と個人開発}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
-\newcommand{\awardsprojects}{\mlt{Awards \& Projects}{学業}}
+\newcommand{\papers}{\mlt{Academic Papers}{学術論文}}
+\newcommand{\extras}{\mlt{Awards \& Projects}{学業}}
+
 
 
 
@@ -57,10 +58,13 @@
 	\jobexperience{\mlt{NLP Engineer}{NLP Engineer}}
 	{\mlt{Development Team}{開発チーム}}
 	{\mlt{Mantra Inc}{Mantra株式会社}}
-	{\mlt{2021}{2021年}}
+	{\mlt{2021/12}{2021年12月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-			\item \mlt{Lead projects applying large language models, }{arg2}
+			\item \mlt{Lead efforts to improve manga translation system, including training large language models and applying glossary-aware translation, using Pytorch}{arg2}
+			\item \mlt{Defined company practices for information security and engineer hiring}{arg2}
+			\item \mlt{Rewrote language learning IOS application from scratch in Flutter }{arg2}
+			\item \mlt{Implemented language learning features in Django backend, such as spaced repetition and multiword expression detection}{arg2}
 	\end{itemize}}
 }
 
@@ -69,7 +73,7 @@
 	\jobexperience{\mlt{NLP Consultant}{NLPコンサルタント}}
 	{\mlt{Freelance}{フリーランス}}
 	{\mlt{Multiple Companies}{数社}}
-	{\mlt{2020}{2020年}}
+	{\mlt{2020/1}{2020年1月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
 		\item \mlt{Lead development of an interactive translation system allowing users to choose from likely output words at each decoding step of Huggingface transformer models.}{arg2}
@@ -78,12 +82,24 @@
 	\end{itemize}}
 }
 
+\newcommand{\jobexpUTokyoIntern}{
+	\jobexperience{\mlt{Research Intern}{研究実習生}}
+	{\mlt{Institute of Industrial Science}{生産技術研究所}}
+	{\mlt{University of Tokyo}{東京大学}}
+	{\mlt{2020/12}{2020年12月}}
+	{\mlt{2020/12}{2021年12月}}
+	{\begin{itemize}[noitemsep]
+			\item \mlt{Research into deep learning approaches to explainable grammatical error correction, word sense disambiguation and definition generation}{arg2}
+	\end{itemize}}
+}
+
+
 %-------------eBay---------------------
 
 
 \newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、一人で保守}}
 
-\newcommand{\ebayItemRevminer}{\item \mlt{Research implementing a bootstrapping NLP process to extract informative noun/adjective pairs from product reviews was accepted for presentation at internal research conference (25\% acceptance rate)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
+\newcommand{\ebayItemRevminer}{\item \mlt{Research implementing a bootstrapping NLP process to extract informative noun/adjective pairs from product reviews was accepted for presentation at eBay's internal research conference (25\% acceptance rate)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
 
 \newcommand{\ebayItemHSR}{\item \mlt{Rearchitected the pipeline used to import shipping charge data from shipping partners, increasing the accuracy of international shipping prices on eBay's search results page by up to 40\%}{提携先の運送会社からデータをインポートするパイプラインを再構築し、eBayの検索結果ページに載る国際配送料の精度を最大で40％改善}}
 
@@ -136,11 +152,10 @@
 % ------------ end eBay ------------------
 
 
-\newcommand{\projectParasite}{
+\newcommand{\extraParasite}{
 	\extra{Parasite}
-	{\mlt{Personal Project}{個人開発}}
 	{\mlt{2009}{2009年}}
-	{\mlt{Lead development of a StarCraft 2 mod which at peak averaged two million plays per week.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
+	{\mlt{Lead development of a StarCraft 2 mod which reached two million plays per week.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
 }
 
 %\newcommand{\awardAmplify}{
@@ -151,12 +166,10 @@
 %}
 
 
-\newcommand{\awardGoldenTicket}{
-		\extra{\mlt{Innovation Expo Presenter}{イノベーション博覧会の発表者に選出}}
-		{eBay Hack Week}
-		%		{\mlt{2016/06/24}{2016年06月24日}}
-		{\mlt{2016/06}{2016年06月}}
-		{\mlt{Hackathon project converting relevant n-grams into affiliate links chosen for presentation at internal innovation expo (14\% acceptance rate).}
+\newcommand{\extraInnovationExpo}{
+		\extra{\mlt{Internal Expo Presenter}{社内博覧会の発表者に選出}}
+		{\mlt{2016/06}{2016年06月}} %on the 24th
+		{\mlt{Hackathon project converting relevant n-grams into affiliate links featured in eBay's internal expo (14\% acceptance rate).}
 		{ハッカソンのチームで開発した、ページ内容と関連性の高いnグラムをアフィリエイトリンクに変換するNode.jsサービスが社内イノベーション博覧会での発表に選ばれた(14\%のアクセプト率)。}}
 }
 
@@ -194,7 +207,7 @@
 	\interpretingexperience{\mlt{Jonathan Ng Japan Tour}{Jonathan Ng日本ツアー}}
 	{\mlt{2019/8}{2019年8月}}
 	{\mlt{Consecutive Interpretation, Translation}{逐次通訳、翻訳}}
-	{\mlt{Accompanied jazz musician \href{https://jonathanngmusic.com/}{Jonathan Ng} for the duration of his Japan tour, interpreting conversations between him and Japnese musicians and translating email correspondances.}
+	{\mlt{Accompanied jazz musician \href{https://jonathanngmusic.com/}{Jonathan Ng} for the duration of his Japan tour, interpreting conversations between him and Japnese musicians and translating email correspondances}
 	{日本ツアーの期間中、ジャズミュージシャンの\href{https://jonathanngmusic.com/}{Jonathan Ng}に同行し、日本人の演奏者との会話を通訳し、メールのやりとりも翻訳}}
 }
 
@@ -202,7 +215,7 @@
 	\interpretingexperience{\mlt{Sakura Con 2019}{桜コン2019}}
 	{\mlt{2019/4}{2019年4月}}
 	{\mlt{Consecutive Interpretation}{逐次通訳}}
-	{\mlt{Accompanied fashion designer, interpreting conversations with event staff and models.}
+	{\mlt{Accompanied fashion designer, interpreting conversations with event staff and models}
 	{ファッションデザイナーに同行し、イベントスタッフやモデルとの会話を通訳}}
 }
 
@@ -210,7 +223,7 @@
 	\interpretingexperience{\mlt{28th Annual Grassroots Summit}{第28回日米草の根交流サミット大会}}
 	{\mlt{2018/9}{2018年9月}}
 	{\mlt{Consecutive Interpretation}{逐次通訳}}
-	{\mlt{Intrepreted explanations of historic Seattle buildings into Japanese and interpreted for the tourist activities of visiting students and faculty.}
+	{\mlt{Intrepreted explanations of historic Seattle buildings into Japanese and interpreted for the tourist activities of visiting students and faculty}
 	{シアトルの歴史的な建物の説明を日本語に通訳し、訪米中の教員と学生たちの観光に必要な会話も通訳}}
 }
 
@@ -218,30 +231,34 @@
 	\interpretingexperience{\mlt{Maxel App Localization}{Maxelアプリの日本語化}}
 	{\mlt{2016/7}{2016年7月}}
 	{\mlt{Translation}{翻訳}}
-	{\mlt{Worked with the developer to translate the \href{https://maxelapp.com/}{Maxel} download accelerator app into Japanese. }
+	{\mlt{Worked with the developer to translate the \href{https://maxelapp.com/}{Maxel} download accelerator app into Japanese}
 	{開発者と協力し、ダウンロードアクセラレーターの\href{https://maxelapp.com/}{Maxel}を和訳}}
 }
 
 
+\newcommand{\papermweaswsd}{
+	\paper{MWE as WSD: Solving Multiword Expression Identification with Word Sense Disambiguation}{\textbf{J Tanner}, J Hoffman}{\href{https://arxiv.org/abs/2303.06623}{arXiv preprint}}{[in review]}
+}
+
+\newcommand{\papergrammartagger}{
+	\paper{GrammarTagger: A Multilingual, Minimally-Supervised Grammar Profiler for Language Education}{M Hagiwara, \textbf{J Tanner}, K Sakaguchi}{\href{https://arxiv.org/abs/2104.03190}{arxiv preprint}}{}
+}
 
 \newcommand{\educationUW}{
 	\education{\mlt{University of Washington}{ワシントン大学}}{\mlt{2019/9 - 2021/12}{2019年9月 - 2021年12月}}{\mlt{M.S. Comp. Linguistics}{計算言語学の理学修士}}
-	{\mlt{Coursework in machine learning and natural language processing.}{機械学習と自然言語処理を中心とした修士課程}}
+	{\mlt{Coursework in machine learning and natural language processing}{機械学習と自然言語処理を中心とした修士課程}}
 }
 \newcommand{\educationEvergreen}{
 	\education{\mlt{The Evergreen State College}{エバーグリーン州立大学}}{\mlt{2012/9 - 2015/4}{2012年9月 - 2015年4月}}{\mlt{B.S. Computer Science}{計算機科学の理学士}}
-	{\mlt{Graduated early with a major in computer science and a minor in Japanese.}{コンピュータ科学の専攻と日本語の副専攻で早期卒業}}
+	{\mlt{Graduated early with a major in computer science and a minor in Japanese}{コンピュータ科学の専攻と日本語の副専攻で早期卒業}}
 }
 
 \newcommand{\educationHyogo}{
 	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2014/4 - 2015/4}{2014年4月 - 2015年4月}}{\mlt{Exchange Program}{交換留学}}
-	{\mlt{Studied Japanese language in a yearlong exchange program.}{日本語の勉強を中心とした留学プログラム}}
+	{\mlt{Studied Japanese language in a yearlong exchange program}{日本語の勉強を中心とした留学プログラム}}
 }
 
 \newcommand{\educationToudai}{
 	\education{\mlt{University of Tokyo}{東京大学}}{\mlt{2020/12 - 2021/12}{2014年4月 - 2015年4月}}{\mlt{Research Practicum}{研究実習}}
-	{\mlt{Natural language processing research at the Institute of Industrial Science.}{東京大学生産技術研究所で自然言語処理の研究実習}}
+	{\mlt{Natural language processing research at the Institute of Industrial Science}{東京大学生産技術研究所で自然言語処理の研究実習}}
 }
-
-\newcommand{\skillenglish}{\mlt{English - Native}{英語 - 母国語}}
-\newcommand{\skilljapanese}{\mlt{Japanese - Fluent (JLPT N1)}{日本語 - 日本語能力試験N1}}

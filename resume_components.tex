@@ -57,6 +57,7 @@
 
 \newcommand{\sidesection}[1]{
 	\noindent {\textbf{\Large{#1}}}
+	\\[0.35\baselineskip]
 }
 
 \newcommand{\sidesubsection}[1]{
@@ -82,26 +83,19 @@
 	\end{minipage}
 }
 
-\newcommand{\extra}[4]{
-	\noindent\begin{minipage}{\linewidth}
-		\begin{tabularx}{\textwidth}{@{}lX@{}}
-			{\large\textbf{#1}} & \hfill #3 \\
-		\end{tabularx} \\
-		#4
-	\end{minipage}\\[0.35\baselineskip]
-}
-
-\newcommand{\project}[2]{
-		\noindent\begin{minipage}{\linewidth}
-		{\large\textbf{#1}} \\ 
-		#2
-		\end{minipage}\\[0.35\baselineskip]
+\newcommand{\extra}[3]{
+	\noindent{\large\textbf{#1}}\\
+	#2\\
+	#3\\
 }
 
 \newcommand{\education}[4]{
-	\noindent\begin{minipage}{\linewidth}
-		{\large\textbf{#3}} \\\textbf{#1}\\#2\vspace*{0.05cm}
-	\end{minipage}\\[0.25\baselineskip]
+	\noindent{\large\textbf{#3}} \\
+	\textbf{#1}\\#2 \\[0.25\baselineskip]
+}
+
+\newcommand{\paper}[4]{
+\noindent{\small\textbf{#1}}\\#2\\#3 #4\\
 }
 
 
