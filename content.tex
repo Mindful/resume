@@ -8,30 +8,12 @@
 \newcommand{\summary}{\mlt{Summary}{自己紹介}}
 \newcommand{\experience}{\mlt{Experience}{職務経歴}}
 \newcommand{\interpreting}{\mlt{Experience}{通訳実績}}
-\newcommand{\skills}{\mlt{Technologies}{技術}}
 \newcommand{\languages}{\mlt{Languages}{言語}}
-\newcommand{\projects}{\mlt{Projects}{個人開発}}
-\newcommand{\awards}{\mlt{Awards}{受賞歴}}
-\newcommand{\projectsawards}{\mlt{Awards and Projects}{受賞歴と個人開発}}
+%\newcommand{\projectsawards}{\mlt{Awards and Projects}{受賞歴と個人開発}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
-\newcommand{\courses}{\mlt{Courses}{学業}}
-\newcommand{\graduatecoursework}{\mlt{Graduate Coursework}{大学院の課題}}
-\newcommand{\skillslanguage}{\mlt{Languages}{言語}}
+\newcommand{\awardsprojects}{\mlt{Awards \& Projects}{学業}}
 
 
-\newcommand{\skillsproficient}{\mlt{Proficient}{経験豊富}}
-\newcommand{\skillsfamiliar}{\mlt{Familiar}{経験あり}}
-
-\newcommand{\proficientskills}{
-Python &  spaCy \\ 
-PyTorch & Scala \\
-Java & Ruby  \\ 
-}
-
-\newcommand{\familiarskills}{
-Rust & SQL \\
-Play Framework & Ruby on Rails\\
-}
 
 \newcommand{\header}[2]{
 	\vspace*{-1cm}
@@ -69,61 +51,30 @@ Play Framework & Ruby on Rails\\
 }
 
 
-\newcommand{\coursemachinelearning}{def}
-\newcommand{\sidebarcoursework}{
-			%	\textbf{\mlt{(by June 2020)}{(2020年6月までに修了)}:\\}
-				\sidesubsection{\mlt{Graduate}{大学院}}\\[0.25\baselineskip]
-				\begin{tabular}{@{}p{\linewidth}@{}}
-				\mlt{NLP 1 (Shallow Processing)}{自然言語処理 I（表層処理)}   \\
-				\mlt{NLP 2 (Deep Processing)}{自然言語処理 II (深層処理)}  \\
-				\mlt{Machine Learning for NLP}{自然言語処理向けの機械学習}  \\
-				\mlt{NLP Systems and Applications}{NLPシステムの開発と応用} \\
-				\mlt{Neural Language Models}{ニューラル言語モデルの解析} \\
-				\mlt{Information Extraction}{情報抽出} \\
-				\mlt{English Syntactic Theory}{英語の統語論} \\
-				\mlt{Japanese Syntax and Semantics}{日本語の統語論と意味論}\\
-				\mlt{Phonetics}{音声学}
-				\end{tabular} \\
-			\sidesubsection{\mlt{Undergraduate}{大学}}\\[0.25\baselineskip]
-				\begin{tabular}{@{}p{\linewidth}@{}}
-				\mlt{Operating Systems}{オペレーティングシステム}   \\
-				\mlt{Networks}{ネットワーク} \\
-				\mlt{Android Development}{アンドロイド開発} \\
-				\mlt{Japanse 1 \& 2}{日本語　I　＆\& II}
-				\end{tabular} \\[0.25\baselineskip]
-}
-
-\newcommand{\courseworkNLP}{
-	\project{NLP 1 \& 2}{
-	\mlt{Implemented NLP algorithms such as n-gram language models, HMM part of speech tagging, probabilistic context free grammar generation and CKY parsing.}
-	{nグラム言語モデル、隠れマルコフモデル品詞付、確率文脈自由文法、CKYパーシングを含め自然言語処理のアルゴリズムを実装した。}}
-}
-\newcommand{\courseworkML}{
-	\project{Machine Learning for NLP}{
-	\mlt{Implemented machine learning algorithms for text classification such as decision trees, naive bayes, and KNN. Partial implementations and other work on maximum entropy models, support vector machines and neural networks.}
-	{決定木、単純ベイズ、k近傍法を含め機械学習アルゴリズムをテキスト分類に適応させて実装した。また、サポートベクターマシンやニューラルネットワークの一部分を実装した。}}
-}
-\newcommand{\courseworkNLM}{
-	\project{Neural Language Models}{
-	\mlt{Designed an experiment to determine how well BERT comprehends idiom paraphrases, fine tuning the models and training probing classifiers with PyTorch. }
-	{BERTの慣用句のパラフレーズに対する理解度を測る実験のため、PyTorchでプロービング分類器を学習させてBERTをファインチューニングした。}}
-}
-
-
 \newcommand{\summarybody}{\mlt{I'm a software engineer with a focus in natural language processing and backend engineering. Programming and languages were both hobbies for me long before they became part of work, and that passion continues to fuel me professionally.}{自然言語処理とバックエンドに精通しているソフトウェアエンジニアである。プログラミングも言語も仕事に関わる前からずっと好きであり、その情熱を仕事に向けて活動している。}}
 
-
-
-\newcommand{\jobexpOctanoveIntern}{
-	\jobexperience{\mlt{Graduate Intern}{大学院生インターン}}
-	{\mlt{Research \& Infrastructure}{研究 \& インフラ}}
-	{\href{https://www.octanove.com/}{Octanove Labs}, \href{https://fuku-inc.com/}{Fuku Inc}, \href{\mlt{https://mantra.co.jp/}{https://mantra.co.jp/index_en.html}}{Mantra Inc}}
-	{\mlt{2020}{2020年}}
+\newcommand{\jobexpMantra}{
+	\jobexperience{\mlt{NLP Engineer}{NLP Engineer}}
+	{\mlt{Development Team}{開発チーム}}
+	{\mlt{Mantra Inc}{Mantra株式会社}}
 	{\mlt{2021}{2021年}}
+	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Implemented an efficient character-level transformer from \href{https://arxiv.org/pdf/2103.06874.pdf}{recent research} in PyTorch, pre-trained it for Japanese, and \href{https://github.com/octanove/shiba}{open sourced it}}{arg2}
-		\item \mlt{Rewrote information extraction pipeline using spaCy, increasing micro f1 by more than 20 points}{spaCyを用いて情報抽出のパイプラインを書き直し、F値のマイクロ平均を20点以上改善}
-		\item \mlt{Set up logging and monitoring using AWS and Sentry}{ベンチャーでロギングとモニタリングの}
+			\item \mlt{Lead projects applying large language models, }{arg2}
+	\end{itemize}}
+}
+
+
+\newcommand{\jobexpNLPConsultant}{
+	\jobexperience{\mlt{NLP Consultant}{NLPコンサルタント}}
+	{\mlt{Freelance}{フリーランス}}
+	{\mlt{Multiple Companies}{数社}}
+	{\mlt{2020}{2020年}}
+	{\mlt{Current}{現在}}
+	{\begin{itemize}[noitemsep]
+		\item \mlt{Lead development of an interactive translation system allowing users to choose from likely output words at each decoding step of Huggingface transformer models.}{arg2}
+		\item \mlt{Implemented the optimized character-level transformer from Google's CANINE paper in PyTorch and \href{https://github.com/octanove/shiba}{released pre-trained models for Japanese}}{ググルの「CANINE」論文の超効率トランスフォーマーをPyTorchで実装し、\href{https://github.com/octanove/shiba}{事前学習されたモデルを公開}}
+		\item \mlt{Rewrote scientific information extraction pipeline using spaCy, increasing micro f1 by more than 20 points}{spaCyを用いた情報抽出のパイプラインを書き直し、F値のマイクロ平均を20点以上改善}
 	\end{itemize}}
 }
 
@@ -132,31 +83,13 @@ Play Framework & Ruby on Rails\\
 
 \newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、一人で保守}}
 
-\newcommand{\ebayItemRevminer}{\item \mlt{Implemented a bootstrapping NLP process to extract informative noun/adjective pairs from product reviews, using Python and spaCy (based on “\href{http://turing.cs.washington.edu/papers/uist12-huang.pdf}{RevMiner}" paper)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
+\newcommand{\ebayItemRevminer}{\item \mlt{Research implementing a bootstrapping NLP process to extract informative noun/adjective pairs from product reviews was accepted for presentation at internal research conference (25\% acceptance rate)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
 
 \newcommand{\ebayItemHSR}{\item \mlt{Rearchitected the pipeline used to import shipping charge data from shipping partners, increasing the accuracy of international shipping prices on eBay's search results page by up to 40\%}{提携先の運送会社からデータをインポートするパイプラインを再構築し、eBayの検索結果ページに載る国際配送料の精度を最大で40％改善}}
 
 \newcommand{\ebayItemAutomation}{\item \mlt{Drove an effort to automate excessive manual operations work, saving the Global Shipping Program team tens of hours of work per week }{インフラやデータ整理などの手作業を自動化する取り組みを率い、国際出荷管理部チームの一週間当たりの手作業時間を数十時間減少させる事に成功}}
 
 \newcommand{\ebayItemJava}{\item \mlt{Maintained and developed new features in Java/Spring services at scale (several million requests per hour), wrote tests using JUnit and Mockito}{JavaとSpringで大規模（毎時数百万のリクエスト )なウェブサービスにおける保守と新機能の開発をし、JUnitとMockitoを利用してその自動てテストも開発}}
-
-
-
-
-\newcommand{\jobexpEbay}{
-	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
-	{\mlt{Global Shipping Program}{国際配送管理部} \& \mlt{New Product Development}{新商品開発部}}
-	{\href{https://www.ebay.com/}{eBay}}
-	{\mlt{2015/9}{2015年9月}}
-	{\mlt{2019/9}{2019年9月}}
-	{\begin{itemize}[noitemsep]
-		\ebayItemScheduler
-		\ebayItemRevminer
-		\ebayItemHSR
-		\ebayItemAutomation
-		\ebayItemJava
-	\end{itemize}}
-}
 
 
 
@@ -202,35 +135,28 @@ Play Framework & Ruby on Rails\\
 
 % ------------ end eBay ------------------
 
-\newcommand{\projectPytext}{
-	\extra{Pytext}
-	{\mlt{Personal Project}{個人開発}}
-	{\mlt{2013}{2013年}}
-	{\mlt{A desktop application written in Python which wraps communication with an email server and use of email to SMS gateways to allow users to participate in SMS conversations without the need for a phone number. }
-	{ユーザーの入力したメッセージをメールとしてSMSゲートウェイに送信する事により、電話番号なしでSMS会話に参加する事を可能にするデスクトップアプリケーションである。一人でPythonで開発した。}}
-}
-
 
 \newcommand{\projectParasite}{
 	\extra{Parasite}
 	{\mlt{Personal Project}{個人開発}}
 	{\mlt{2009}{2009年}}
-	{\mlt{Developed a StarCraft 2 mod which at peak averaged two million plays per week, later onboarding another developer and two community managers to help.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
+	{\mlt{Lead development of a StarCraft 2 mod which at peak averaged two million plays per week.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
 }
 
-\newcommand{\awardAmplify}{
-	\extra{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
-	{\mlt{Paper Submission}{論文投稿}}
-	{\mlt{2018/05/7}{2018年5月7日}}
-	{\mlt{Information extraction research I conducted as a side project was accepted for presentation at eBay's internal research conference (25\% acceptance rate).}{片手間で進めた情報抽出の研究でeBayの社内学会の登壇者に選ばれた (25\%のアクセプト率)。}}
-}
+%\newcommand{\awardAmplify}{
+	%\extra{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
+	%{\mlt{Paper Submission}{論文投稿}}
+	%{\mlt{2018/05/7}{2018年5月7日}}
+	%{\mlt{Information extraction research I conducted as a side project was accepted for presentation at eBay's internal research conference (25\% acceptance rate).}{片手間で進めた情報抽出の研究でeBayの社内学会の登壇者に選ばれた (25\%のアクセプト率)。}}
+%}
 
 
 \newcommand{\awardGoldenTicket}{
 		\extra{\mlt{Innovation Expo Presenter}{イノベーション博覧会の発表者に選出}}
 		{eBay Hack Week}
-		{\mlt{2016/06/24}{2016年06月24日}}
-		{\mlt{Our hackathon team's Node.js service which turned representative n-grams from web pages into affiliate links was chosen for presentation at eBay's internal innovation expo (14\% acceptance rate).}
+		%		{\mlt{2016/06/24}{2016年06月24日}}
+		{\mlt{2016/06}{2016年06月}}
+		{\mlt{Hackathon project converting relevant n-grams into affiliate links chosen for presentation at internal innovation expo (14\% acceptance rate).}
 		{ハッカソンのチームで開発した、ページ内容と関連性の高いnグラムをアフィリエイトリンクに変換するNode.jsサービスが社内イノベーション博覧会での発表に選ばれた(14\%のアクセプト率)。}}
 }
 
@@ -246,12 +172,12 @@ Play Framework & Ruby on Rails\\
 
 % Interpreter work
 
-\newcommand{\interpexpSakuraconTwo}{
-	\interpretingexperience{\mlt{Sakura Con 2020}{桜コン2020}}
-	{\mlt{April 2020}{2020年4月}}
-	{\mlt{blah blah blah}
-	{ブラブラブラ}
-	}
+\newcommand{\interpexpCrunchyrollTwo}{
+	\interpretingexperience{\mlt{Crunchyroll Expo 2022}{クランチーロールエキスポ2022}}
+	{\mlt{2022/9}{2022年9月}}
+	{\mlt{Consecutive Interpretation}{逐次通訳}}
+	{\mlt{Accompanied band ATARASHII GAKKO!, interpreting press interviews and conversations with event staff.}
+		{バンドのATARASHII GAKKO!に同行し、記者会見、イベントスタッフとの会話を通訳}}
 
 }
 
@@ -259,8 +185,8 @@ Play Framework & Ruby on Rails\\
 	\interpretingexperience{\mlt{Crunchyroll Expo 2019}{クランチーロールエキスポ2019}}
 	{\mlt{2019/9}{2019年9月}}
 	{\mlt{Consecutive Interpretation}{逐次通訳}}
-	{\mlt{Accompanied visiting composer Yasuharu Takanashi for the duration of the conference, interpreting panel presentations, press interviews, and conversations with event staff.}
-	{大会の期間中、来客された作曲家の高梨康治に同行し、パネル発表、記者会見、イベントスタッフとの会話を通訳}}
+	{\mlt{Accompanied composer Yasuharu Takanashi, interpreting panel presentations, press interviews, and conversations with event staff.}
+	{作曲家の高梨康治に同行し、パネル発表、記者会見、イベントスタッフとの会話を通訳}}
 }
 
 
@@ -276,8 +202,8 @@ Play Framework & Ruby on Rails\\
 	\interpretingexperience{\mlt{Sakura Con 2019}{桜コン2019}}
 	{\mlt{2019/4}{2019年4月}}
 	{\mlt{Consecutive Interpretation}{逐次通訳}}
-	{\mlt{Accompanied visiting fashion designer for the duration of the conference, interpreting conversations with event staff and models.}
-	{大会の期間中、来客されたファッションデザイナーに同行し、イベントスタッフやモデルとの会話を通訳}}
+	{\mlt{Accompanied fashion designer, interpreting conversations with event staff and models.}
+	{ファッションデザイナーに同行し、イベントスタッフやモデルとの会話を通訳}}
 }
 
 \newcommand{\interpexpGrassroots}{
