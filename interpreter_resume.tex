@@ -7,7 +7,7 @@
 % Toggles 
 % -----------
 
-\toggletrue{long} % so we get longer versions of the education section
+\toggletrue{pii}
 
 \begin{document}
 	
@@ -26,32 +26,40 @@
 		% Core Resume
 		% -------
 
+		\noindent\begin{minipage}[t]{0.64\textwidth}
+			\majorsection{\interpreting}
+			\interpexpMantra
+			\interpexpCrunchyrollTwo
+			\interpexpCrunchyrollOne
+			\interpexpJonathan
+			\interpexpSakuraconOne
+			\interpexpGrassroots
+			\translationexpMaxel
+\end{minipage}\hfill
+\begin{minipage}[t]{0.345\textwidth}
+	\majorsection{\aboutme}
+	\mlt{I am a software engineer specializing in language-related artificial intelligence, but I enjoy translating as an opportunity to work with natural language directly. I belive these two lines of work compliment each other: my engineering background makes me uniquely qualified for technical translation, and translating helps me think more deeply about language and meaning. My Japanese comes from several years I spent studying and working in Japan, and from diligent self-study.}{arg2}
 	
-		\majorsection{\interpreting}
-		\interpexpCrunchyrollTwo
-		\interpexpCrunchyrollOne
-		\interpexpJonathan
-		\interpexpSakuraconOne
-		\interpexpGrassroots
-		\translationexpMaxel
-	
-		
-		\majorsection{\languages} 
-		\begin{large}
+	\majorsection{\languages} 
+	\begin{large}
 		\begin{tabular}{@{}l l@{}}
 			\mlt{English}{英語} &  \mlt{Native}{母語} \\
 			\mlt{Japanese}{日本語} & \mlt{Fluent (JLPT N1)}{日本語能力試験N1}
 		\end{tabular}
-		\end{large}\\
-
-				
-				
+	\end{large}\\
+	
+	
+	
+	
+	\majorsection{\educationhistory} 
+	\educationUW  
+	\educationToudai
+	\educationEvergreen  
+	\educationHyogo
+\end{minipage}
+	
+	
 		
-		\majorsection{\educationhistory} 
-		\educationUW  
-		\educationToudai
-		\educationEvergreen  
-		\educationHyogo
 		
 		
 \end{document}
