@@ -35,10 +35,10 @@
 \newtoggle{ja} %Show Japanese text?
 \newtoggle{en} %Show English text? 
 \newtoggle{photo} %Show photo?
-\newtoggle{long} %Resume long version?
 \newtoggle{summary} %Show summary? (in long version)
 \newtoggle{pii} % Contact info in the upper right hand corner?
 \newtoggle{useja} % Easy switch between japanese and english
+\newtoggle{interpreter} % interpreter resume?
 
 
 % ---------------
@@ -69,22 +69,22 @@
 			\textbf{#2} & \hfill #4 - #5\\
 		\end{tabularx}\vspace{-6pt}}
 		#6
-	\end{minipage}
+	\end{minipage}\\[0.1\baselineskip]
 }
 
 \newcommand{\extra}[3]{
 	\noindent{\textbf{#1}}\\
 	#2\\
-	#3\\[0.25\baselineskip]
+	#3\\[0.3\baselineskip]
 }
 
 \newcommand{\education}[4]{
-	\noindent{\textbf{#3}} \\
-	#1 / #2 \\[0.25\baselineskip]
+	\noindent{\large\textbf{#3}} \\
+	 \iftoggle{interpreter}{\textbf{#1 / #2}\\#4}{#1 / #2}\\[0.3\baselineskip]
 }
 
 \newcommand{\paper}[4]{
-\noindent{\textbf{#1}}\\#2\\ \href{#4}{#3} \\[0.25\baselineskip]
+\noindent{\textbf{#1}}\\#2\\ \href{#4}{#3} \\[0.3\baselineskip]
 }
 
 
@@ -99,7 +99,7 @@
 		{\hfill\textbf{#3}}
 	\end{tabularx}
 	#4
-	\end{minipage}\\[0.35\baselineskip]
+	\end{minipage}\\[0.4\baselineskip]
 }
 % -------------
 %   Languages
