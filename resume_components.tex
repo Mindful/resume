@@ -27,6 +27,11 @@
 % change the margins to 2 inches all round
 \geometry{top=1.75cm, bottom=0.75cm, left=1.5cm, right=1.5cm} 
 
+\renewcommand{\labelitemii}{$\circ$}
+\setlist{nosep}
+
+
+
 
 % ---------------
 % Toggle Definitions
@@ -57,17 +62,10 @@
 \newcommand{\jobexperience}[6]{
 	\vspace{5pt}
 	\begin{minipage}{\linewidth}
-		\ifstrempty{#2}{\vspace{-4pt}\begin{tabularx}{\textwidth}{@{}lX@{}}
-				\large\textbf{#1} & 
-				\hfill \begin{tabular}[x]{@{}l@{}}
-					 {\large\hfill\textbf{#3}} \\
-					\hfill#4 - #5 \\
-				\end{tabular}
-		\end{tabularx}\vspace{-8pt}}
-		{\begin{tabularx}{\textwidth}{@{}lX@{}}
+		\begin{tabularx}{\textwidth}{@{}lX@{}}
 			\large\textbf{#1} & {\large\hfill\textbf{#3}} \\
 			\textbf{#2} & \hfill #4 - #5\\
-		\end{tabularx}\vspace{-6pt}}
+		\end{tabularx}
 		#6
 	\end{minipage}\\[0.1\baselineskip]
 }

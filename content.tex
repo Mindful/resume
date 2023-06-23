@@ -10,7 +10,7 @@
 \newcommand{\languages}{\mlt{Languages}{言語}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
 \newcommand{\papers}{\mlt{Academic Papers}{学術論文}}
-\newcommand{\extras}{\mlt{Awards \& Projects}{学業}}
+\newcommand{\extras}{\mlt{Projects}{個人開発}}
 
 
 
@@ -60,7 +60,12 @@
 	{\mlt{2021/12}{2021年12月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-			\item \mlt{Mentor engineers working on manga translation system through projects using Pytorch and LangChain such as utilizing and fine-tuning large language models, glossary-aware translation and fluency evaluation}{arg2} %...to achieve <SOMETHING>, TODO
+			\item \mlt{	Mentor engineers working on manga translation system, improving BLEU score on multiple languages by $>$10. Projects include: 
+				\begin{itemize}[noitemsep]
+					\item Training multilingual and glossary-aware translation models with Fairseq
+					\item Training LoRA adapters and engineering prompts for large language models using Pytorch \& LangChain
+					\item Investigate methods to automatically detect bad translations
+			\end{itemize}}{arg2}
 			\item \mlt{Defined and implemented company policy for information security and engineer hiring}{arg2}
 			\item \mlt{Rewrote flagship mobile application from scratch in Flutter }{arg2}
 			\item \mlt{Develop and maintain application backend using Django and AWS}{arg2}
@@ -96,13 +101,13 @@
 %-------------eBay---------------------
 
 
-\newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and maintained sole ownership of the Scala distributed scheduler that powered proactive messaging for eBay ShopBot and eBay's Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、一人で保守}}
+\newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and maintained sole ownership of Scala distributed scheduler that powered proactive messaging for eBay's chat bot and Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、一人で保守}}
 
-\newcommand{\ebayItemRevminer}{\item \mlt{Research implementing a bootstrapping NLP process to extract informative noun/adjective pairs from product reviews was accepted for presentation at eBay's internal research conference (25\% acceptance rate)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
+\newcommand{\ebayItemRevminer}{\item \mlt{Research implementing bootstrapping NLP process to extract informative noun/adjective pairs from product reviews was accepted for presentation at eBay's internal research conference (25\% acceptance rate)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
 
 \newcommand{\ebayItemHSR}{\item \mlt{Rearchitected the pipeline used to import shipping charge data from shipping partners, increasing the accuracy of international shipping prices on eBay's search results page by up to 40\%}{提携先の運送会社からデータをインポートするパイプラインを再構築し、eBayの検索結果ページに載る国際配送料の精度を最大で40％改善}}
 
-\newcommand{\ebayItemAutomation}{\item \mlt{Drove an effort to automate excessive manual operations work, saving the Global Shipping Program team tens of hours of work per week }{インフラやデータ整理などの手作業を自動化する取り組みを率い、国際出荷管理部チームの一週間当たりの手作業時間を数十時間減少させる事に成功}}
+\newcommand{\ebayItemAutomation}{\item \mlt{Drove an effort to automate excessive manual operations work, saving team tens of hours of work per week }{インフラやデータ整理などの手作業を自動化する取り組みを率い、国際出荷管理部チームの一週間当たりの手作業時間を数十時間減少させる事に成功}}
 
 \newcommand{\ebayItemJava}{\item \mlt{Maintained and developed new features in Java/Spring services at scale (several million requests per hour), wrote tests using JUnit and Mockito}{JavaとSpringで大規模（毎時数百万のリクエスト )なウェブサービスにおける保守と新機能の開発をし、JUnitとMockitoを利用してその自動てテストも開発}}
 
@@ -117,7 +122,7 @@
 	{\begin{itemize}[noitemsep]
 		\ebayItemScheduler
 		\ebayItemRevminer
-		\item \mlt{Developed a Ruby on Rails web service that allowed non-technical users to customize and schedule proactive messages from ShopBot to users }
+		\item \mlt{Developed Ruby on Rails web service that allowed non-technical staff to write and schedule proactive messages from chat bot to users } % TODO: fix japanese
 		{Ruby on Railsを利用し、非技術系社員が顧客へのメッセージをカスタマイズしたりスケジュール送信できるウェブアプリケーションをゼロから開発}
 	\end{itemize}}
 }
@@ -143,7 +148,7 @@
 	{\mlt{2013/6}{2013年6月}}
 	{\mlt{2014/9}{2014年9月}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Owned and greatly expanded the functionality of a Ruby on Rails application automating Hadoop permissions changes and other operational tasks}
+		\item \mlt{Owned and expanded functionality of Ruby on Rails application automating Hadoop permissions changes and other operational tasks}
 		{Hadoopでの権限変更や運用タスクを自動化するRuby on Railsウェブアプリケーションの担当者となり、様々な新機能を開発}
 	\end{itemize}}
 }
@@ -165,21 +170,12 @@
 %}
 
 
-\newcommand{\extraInnovationExpo}{
-		\extra{\mlt{Expo Presenter}{社内博覧会の発表者に選出}}
+\newcommand{\extraInnovationExpo}{ % TODO: rework japanese
+		\extra{\mlt{Affiliate Link Generator}{社内博覧会の発表者に選出}}
 		{\mlt{eBay Innovation Expo / 2016}{2016年}} %2016/06/04
 		{\mlt{Hackathon project converting relevant n-grams into affiliate links featured in internal expo (14\% acceptance rate).}
 		{ハッカソンのチームで開発した、ページ内容と関連性の高いnグラムをアフィリエイトリンクに変換するNode.jsサービスが社内イノベーション博覧会での発表に選ばれた(14\%のアクセプト率)。}}
 }
-
-\newcommand{\awardEbayApi}{
-		\extra{\mlt{Best eBay API Integration}{eBay API利用部門で優勝}}
-		{2013 CodeDay Seattle}
-		{\mlt{2013/05/26}{2013年05月26日}}
-		{\mlt{Placed first in category among 7 teams by building a Python/Flask web application which signed into eBay and purchased random items from eBay on behalf of the user. }
-		{ユーザーとしてeBayにログインし自動的にランダムな商品を購入するウェブアプリケーションをPythonで開発し、部門で7つのチームの中から優勝した。}}
-}
-
 
 
 % Interpreter work
@@ -247,6 +243,10 @@
 
 \newcommand{\papermweaswsd}{
 	\paper{MWE as WSD: Solving Multiword Expression Identification with Word Sense Disambiguation}{\textbf{J Tanner}, J Hoffman}{[in review]}{https://openreview.net/pdf?id=qWlU7Y8BF4S}
+}
+
+\newcommand{\papermangatranslationlongcontext}{
+	\paper{Using Long Context for Manga Machine Translation}{H Kaino, T Kajiwara, T Ninomiya, \textbf{J Tanner}, S Ishiwatari}{[in review]}{arg4}
 }
 
 \newcommand{\papergrammartagger}{
