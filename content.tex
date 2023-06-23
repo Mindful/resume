@@ -60,11 +60,11 @@
 	{\mlt{2021/12}{2021年12月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-			\item \mlt{	Mentor engineers working on manga translation system, improving BLEU score on multiple languages by $>$10. Projects include: 
+			\item \mlt{	Mentor engineers working on manga translation system, improving BLEU score on multiple languages by $>$10 via projects including: 
 				\begin{itemize}[noitemsep]
-					\item Training multilingual and glossary-aware translation models with Fairseq
+					\item Training multilingual and terminology-aware translation models with Fairseq
 					\item Training LoRA adapters and engineering prompts for large language models using Pytorch \& LangChain
-					\item Investigate methods to automatically detect bad translations
+					\item Investigating methods to automatically detect bad translations
 			\end{itemize}}{arg2}
 			\item \mlt{Defined and implemented company policy for information security and engineer hiring}{arg2}
 			\item \mlt{Rewrote flagship mobile application from scratch in Flutter }{arg2}
@@ -81,7 +81,7 @@
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
 		\item \mlt{Lead development of interactive translation system allowing users to choose from output words at each decoding step of Huggingface transformer models}{arg2}
-		\item \mlt{Implemented optimized character-level transformer architecture in PyTorch and pretrained it with masked langauge modeling, achieving state-of-the-art in Japanese sentiment classification}{ググルの「CANINE」論文の超効率トランスフォーマーをPyTorchで実装し、\href{https://github.com/octanove/shiba}{事前学習されたモデルを公開}}
+		\item \mlt{Implemented optimized character-level transformer architecture in PyTorch and pretrained it with masked langauge modeling, outperforming state-of-the-art in Japanese topic classification \href{https://github.com/octanove/shiba}{[link \faExternalLinkSquare*]}}{ググルの「CANINE」論文の超効率トランスフォーマーをPyTorchで実装し、\href{https://github.com/octanove/shiba}{事前学習されたモデルを公開}}
 		\item \mlt{Rewrote scientific information extraction pipeline using spaCy, increasing micro f1 by more than 20 points}{spaCyを用いた情報抽出のパイプラインを書き直し、F値のマイクロ平均を20点以上改善}
 	\end{itemize}}
 }
@@ -116,7 +116,7 @@
 \newcommand{\jobexpNPD}{
 	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{New Product Development \& Global Growth}{新商品開発部 \& グローバル成長部}}
-	{\href{https://www.ebay.com/}{eBay}}
+	{eBay}
 	{\mlt{2016/11}{2016年11月}}
 	{\mlt{2019/9}{2019年9月}} 
 	{\begin{itemize}[noitemsep]
@@ -130,7 +130,7 @@
 \newcommand{\jobexpGSP}{
 	\jobexperience{\mlt{Software Engineer}{ソフトウェアエンジニア}}
 	{\mlt{Global Shipping Program}{国際配送管理部}}
-	{\href{https://www.ebay.com/}{eBay}}
+	{eBay}
 	{\mlt{2015/9}{2015年9月}}
 	{\mlt{2016/11}{2016年11月}}
 	{\begin{itemize}[noitemsep]
@@ -144,7 +144,7 @@
 \newcommand{\jobexpGDIIntern}{
 	\jobexperience{\mlt{Intern}{インターン}}
 	{\mlt{Global Data Infrastructure}{国際データインフラ部}}
-	{\href{https://www.ebay.com/}{eBay}}
+	{eBay}
 	{\mlt{2013/6}{2013年6月}}
 	{\mlt{2014/9}{2014年9月}}
 	{\begin{itemize}[noitemsep]
@@ -156,10 +156,15 @@
 % ------------ end eBay ------------------
 
 
+\newcommand{\extraResolve}{
+	\extra{MWE Dictionary}
+	{Personal Project / 2023}
+	{Multiword-expression aware dictionary for language learners using models trained with Pytorch Lightning and gRPC for backend}
+}
 \newcommand{\extraParasite}{
 	\extra{Parasite}
 	{\mlt{Personal Project / 2009}{2009年}}
-	{\mlt{Lead development of StarCraft 2 mod reaching two million plays per week.}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
+	{\mlt{Lead development of StarCraft 2 mod reaching two million plays per week}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう一人の開発者と二人のコミュニティ管理者でチームを結成した。}}
 }
 
 %\newcommand{\awardAmplify}{
@@ -173,7 +178,7 @@
 \newcommand{\extraInnovationExpo}{ % TODO: rework japanese
 		\extra{\mlt{Affiliate Link Generator}{社内博覧会の発表者に選出}}
 		{\mlt{eBay Innovation Expo / 2016}{2016年}} %2016/06/04
-		{\mlt{Hackathon project converting relevant n-grams into affiliate links featured in internal expo (14\% acceptance rate).}
+		{\mlt{Hackathon project converting relevant n-grams into affiliate links featured in internal expo (14\% acceptance rate)}
 		{ハッカソンのチームで開発した、ページ内容と関連性の高いnグラムをアフィリエイトリンクに変換するNode.jsサービスが社内イノベーション博覧会での発表に選ばれた(14\%のアクセプト率)。}}
 }
 
@@ -212,7 +217,7 @@
 	\interpretingexperience{\mlt{Jonathan Ng Japan Tour}{Jonathan Ng日本ツアー}}
 	{\mlt{2019/8}{2019年8月}}
 	{\mlt{Interpretation \& Translation}{逐次通訳と翻訳}}
-	{\mlt{Accompanied jazz musician \href{https://jonathanngmusic.com/}{Jonathan Ng} for the duration of his Japan tour, interpreting conversations between him and Japnese musicians and translating email correspondances}
+	{\mlt{Accompanied jazz musician Jonathan Ng for the duration of his Japan tour, interpreting conversations between him and Japnese musicians and translating email correspondances}
 	{日本ツアーの期間中、ジャズミュージシャンの\href{https://jonathanngmusic.com/}{Jonathan Ng}に同行し、日本人の演奏者との会話を通訳し、メールのやりとりも翻訳}}
 }
 
@@ -236,17 +241,17 @@
 	\interpretingexperience{\mlt{Maxel App Localization}{Maxelアプリの日本語化}}
 	{\mlt{2016/7}{2016年7月}}
 	{\mlt{Translation}{翻訳}}
-	{\mlt{Worked with the developer to translate the \href{https://maxelapp.com/}{Maxel} download accelerator app into Japanese}
+	{\mlt{Worked with the developer to translate the Maxel download accelerator app into Japanese}
 	{開発者と協力し、ダウンロードアクセラレーターの\href{https://maxelapp.com/}{Maxel}を和訳}}
 }
 
 
 \newcommand{\papermweaswsd}{
-	\paper{MWE as WSD: Solving Multiword Expression Identification with Word Sense Disambiguation}{\textbf{J Tanner}, J Hoffman}{[in review]}{https://openreview.net/pdf?id=qWlU7Y8BF4S}
+	\paper{MWE as WSD: Solving Multiword Expression Identification with Word Sense Disambiguation}{\textbf{J Tanner}, J Hoffman}{Currently in review}{https://openreview.net/pdf?id=qWlU7Y8BF4S}
 }
 
 \newcommand{\papermangatranslationlongcontext}{
-	\paper{Using Long Context for Manga Machine Translation}{H Kaino, T Kajiwara, T Ninomiya, \textbf{J Tanner}, S Ishiwatari}{[in review]}{arg4}
+	\paper{Using Long Context for Manga Machine Translation}{H Kaino, T Kajiwara, T Ninomiya, \textbf{J Tanner}, S Ishiwatari}{Currently in review}{}
 }
 
 \newcommand{\papergrammartagger}{

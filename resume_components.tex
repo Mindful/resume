@@ -9,7 +9,14 @@
 \usepackage{fontspec} %Set English font
 \usepackage{tabularx}
 \usepackage{url}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\definecolor{linkDarkBlue}{rgb}{0.0, 0.0, 0.55}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=linkDarkBlue
+}
 
 \urlstyle{same}
 
@@ -82,7 +89,7 @@
 }
 
 \newcommand{\paper}[4]{
-\noindent{\textbf{#1}}\\#2\\ \href{#4}{#3} \\[0.3\baselineskip]
+\noindent{\textbf{#1}}\\#2\\ #3 \ifstrempty{#4}{}{\href{#4}{[link \faExternalLinkSquare*]}} \\[0.3\baselineskip]
 }
 
 
