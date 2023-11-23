@@ -9,7 +9,7 @@
 \newcommand{\experience}{\mlt{Experience}{職務経歴}}
 \newcommand{\languages}{\mlt{Languages}{言語}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
-\newcommand{\papers}{\mlt{Academic Papers}{学術論文}}
+\newcommand{\papers}{\mlt{Research}{研究}}
 \newcommand{\extras}{\mlt{Projects}{個人開発}}
 
 
@@ -54,21 +54,22 @@
 \newcommand{\summarybody}{\mlt{I'm a software engineer with a focus in natural language processing and backend engineering. Programming and languages were both hobbies for me long before they became part of work, and that passion continues to fuel me professionally.}{自然言語処理とバックエンドに精通しているソフトウェアエンジニアである。プログラミングも言語も仕事に関わる前からずっと好きであり、その情熱を仕事に向けて活動している。}}
 
 \newcommand{\jobexpMantra}{
-	\jobexperience{\mlt{NLP Engineer}{NLP Engineer}}
+	\jobexperience{\mlt{NLP Lead}{NLP Lead}}
 	{\mlt{Development Team}{開発チーム}}
 	{\mlt{Mantra Inc}{Mantra株式会社}}
 	{\mlt{2021/12}{2021年12月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-			\item \mlt{	Mentor engineers working on manga translation system, improving BLEU score on multiple languages by $>$10 via projects including: 
+			\item \mlt{Lead NLP engineering efforts across multiple machine translation projects including: 
 				\begin{itemize}[noitemsep]
-					\item Training multilingual and terminology-aware translation models with Fairseq
-					\item Training LoRA adapters and engineering prompts for large language models using Pytorch \& LangChain
-					\item Investigating methods to automatically detect bad translations
+				\item Apply LLMs to manga translation, allowing terminology and story aware translation of >30k manga chapters
+				\item Explore LLM fine-tuning methods to improve translation performance
+				\item Build multi-step LLM pipeline for full novel translation, translating >150 novels
+				\item Train multilingual and terminology-aware translation models with Fairseq, improving BLEU on multiple languages by $>$10
+				\item Coordinate with professional translators to optimize human evaluation and post-editing for manga translation systems
 			\end{itemize}}{arg2}
-			\item \mlt{Defined and implemented company policy for engineer hiring, reducing interviews per hire by more than 50\%}{arg2}
-			\item \mlt{Rewrote flagship mobile application from scratch in Flutter }{arg2}
 			\item \mlt{Develop and maintain application backend using Django and AWS}{arg2}
+			\item \mlt{Rewrote flagship mobile application from scratch in Flutter }{arg2}
 	\end{itemize}}
 }
 
@@ -80,7 +81,7 @@
 	{\mlt{2020/1}{2020年1月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Lead development of interactive translation system allowing users to choose from output words at each decoding step of Huggingface transformer models}{arg2}
+		\item \mlt{Lead development of interactive translation system giving users word choices at each decoding step of transformer models}{arg2}
 		\item \mlt{Implemented optimized character-level transformer architecture in PyTorch and pretrained it with masked langauge modeling, outperforming state-of-the-art in Japanese topic classification \href{https://github.com/octanove/shiba}{[link \faExternalLinkSquare*]}}{ググルの「CANINE」論文の超効率トランスフォーマーをPyTorchで実装し、\href{https://github.com/octanove/shiba}{事前学習されたモデルを公開}}
 		\item \mlt{Rewrote scientific information extraction pipeline using spaCy, increasing micro f1 by more than 20 points}{spaCyを用いた情報抽出のパイプラインを書き直し、F値のマイクロ平均を20点以上改善}
 	\end{itemize}}
@@ -247,7 +248,7 @@
 
 
 \newcommand{\papermweaswsd}{
-	\paper{MWE as WSD: Solving Multiword Expression Identification with Word Sense Disambiguation}{\textbf{J Tanner}, J Hoffman}{Currently in review}{https://openreview.net/pdf?id=qWlU7Y8BF4S}
+	\paper{MWE as WSD: Solving Multiword Expression Identification with Word Sense Disambiguation}{\textbf{J Tanner}, J Hoffman}{EMNLP Findings+Poster 2023}{https://arxiv.org/abs/2303.06623}
 }
 
 \newcommand{\papermangatranslationlongcontext}{
