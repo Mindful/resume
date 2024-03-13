@@ -60,17 +60,17 @@
 	{\mlt{2021/12}{2021年12月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-			\item \mlt{Lead NLP engineering (5 engineers) across multiple projects: 
+			\item \mlt{Lead NLP engineering (5 engineers) across multiple projects:}{複数のプロジェクトにおいて、NLPの研究開発をリード（エンジニア5名）：}
 				\begin{itemize}[noitemsep]
-				\item Apply LLMs to manga translation, allowing terminology and story aware translation of >30k manga chapters
-%				\item Explore LLM fine-tuning methods to improveinl translation performance
-				\item Build multi-step LLM pipeline for novel translation with LangChain to partially automate translation of >150 novels
-				\item Integrate Mantra's translation technology into multiple multi-billion dollar companies
-				\item Train multilingual and terminology-aware translation models with Fairseq, improving BLEU on multiple languages by $>$10
-				\item Work with professional translators to improve evaluation
-			\end{itemize}}{arg2}
-			\item \mlt{Develop and maintain application backend using Django and AWS}{arg2}
-			\item \mlt{Rewrite flagship mobile application from scratch in Flutter}{arg2}
+				\item \mlt{Apply LLMs to manga translation, allowing terminology and story aware translation of >30k manga chapters}{LMを漫画翻訳に応用し、用語やストーリーを考慮した3万話以上の翻訳を達成}
+				\item \mlt{Build LLM pipeline for novel translation with LangChain to partially automate translation of >150 novels}{LangChainを用いた小説翻訳のLLMパイプラインの構築により、150冊以上の小説の翻訳を部分的に自動化}
+				\item \mlt{Explore LLM fine-tuning methods to improve translation fluency}{翻訳の流暢性を向上させるためのLLMのファインチューニング手法を調査}
+				\item \mlt{Integrate Mantra's translation technology into multiple multi-billion dollar companies}{Mantraの翻訳技術を複数の数十億ドル規模の企業に統合}
+				\item \mlt{Train multilingual and terminology-aware translation models with Fairseq, improving BLEU on multiple languages by $>$10}{Fairseqを用いて多言語かつ用語認識可能な翻訳モデルを訓練し、複数の言語でのBLEUスコアを10点以上向上さ}
+				\item \mlt{Work with professional translators to improve evaluation}{プロの翻訳者と協力し、評価方法を改善}
+			\end{itemize}
+			\item \mlt{Develop and maintain application backend using Django and AWS}{DjangoとAWSを使用してアプリケーションのバックエンドを開発・保守}
+			\item \mlt{Rewrite flagship mobile application from scratch in Flutter}{看板商品モバイルアプリケーションをFlutterで一から書き直し}
 	\end{itemize}}
 }
 
@@ -82,8 +82,8 @@
 	{\mlt{2020/1}{2020年1月}}
 	{\mlt{Current}{現在}}
 	{\begin{itemize}[noitemsep]
-		\item \mlt{Lead development of interactive translation system giving users word choices at each decoding step of transformer models}{arg2}
-		\item \mlt{Implemented optimized character-level transformer architecture in PyTorch and pretrained it with masked langauge modeling, outperforming state-of-the-art in Japanese topic classification \href{https://github.com/octanove/shiba}{[link \faExternalLinkSquare*]}}{ググルの「CANINE」論文の超効率トランスフォーマーをPyTorchで実装し、\href{https://github.com/octanove/shiba}{事前学習されたモデルを公開}}
+		\item \mlt{Led development of an interactive translation system allowing users to translate by repeatedly selecting from model-suggested words}{翻訳モデルが提案する単語から繰り返し選択して翻訳を構築できるインタラクティブな訳システムの開発をリード}
+		\item \mlt{Implemented optimized character-level transformer architecture in PyTorch and pretrained it with masked langauge modeling, outperforming state-of-the-art in Japanese topic classification \href{https://github.com/octanove/shiba}{[link \faExternalLinkSquare*]}}{ググルの「CANINE」論文の超効率トランスフォーマーをPyTorchで実装し、事前学習されたモデルを公開\href{https://github.com/octanove/shiba}{[link \faExternalLinkSquare*]}}
 		\item \mlt{Rewrote scientific information extraction pipeline using spaCy, increasing micro f1 by more than 20 points}{spaCyを用いた情報抽出のパイプラインを書き直し、F値のマイクロ平均を20点以上改善}
 	\end{itemize}}
 }
@@ -95,7 +95,7 @@
 	{\mlt{2020/12}{2020年12月}}
 	{\mlt{2021/12}{2021年12月}}
 	{\begin{itemize}[noitemsep]
-			\item \mlt{Research into deep learning approaches to retrieval-augmented and explainable grammatical error correction}{arg2}
+			\item \mlt{Research into to retrieval-augmented and explainable grammatical error correction}{説明可能な検索拡張文法誤り訂正の手法の研究}
 	\end{itemize}}
 }
 
@@ -160,8 +160,9 @@
 
 \newcommand{\extraResolve}{
 	\extra{MWE Dictionary}
-	{Personal Project / 2023}
-	{Multiword-expression aware dictionary for language learners using models trained with Pytorch Lightning and a gRPC backend}
+	{\mlt{2023}{2023年}}
+	{\mlt{Multiword-expression aware dictionary for language learners using models trained with Pytorch Lightning and a gRPC backend}{
+			Pytorch Lightningで訓練されたモデルとgRPCバックエンドを使用し、言語学習者向けの複単語表現を検出する辞書パウリを開発}}
 }
 \newcommand{\extraParasite}{
 	\extra{Parasite}
@@ -177,11 +178,11 @@
 %}
 
 
-\newcommand{\extraInnovationExpo}{ % TODO: rework japanese
-		\extra{\mlt{Affiliate Link Generator}{社内博覧会の発表者に選出}}
+\newcommand{\extraInnovationExpo}{ 
+		\extra{\mlt{Affiliate Link Generator}{アフィリエイトリンク生成器}}
 		{\mlt{eBay Innovation Expo / 2016}{2016年}} %2016/06/04
 		{\mlt{Hackathon project converting relevant n-grams into affiliate links featured in internal expo (14\% acceptance rate)}
-		{ハッカソンのチームで開発した、ページ内容と関連性の高いnグラムをアフィリエイトリンクに変換するNode.jsサービスが社内イノベーション博覧会での発表に選ばれた(14\%のアクセプト率)。}}
+		{関連性の高いn-グラムをアフィリエイトリンクに変換するハッカソンプロジェクトが社内イノベーション博覧会での発表に選ばれた(採択率14\%)}}
 }
 
 
