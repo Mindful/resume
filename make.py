@@ -37,7 +37,7 @@ def compile_for_toggle_combinations(filename, toggles):
 		copyfile(filename+'.pdf', target_filename)
 
 
-compile_for_toggle_combinations('resume', ['pii', 'useja', 'long'])
+compile_for_toggle_combinations('resume', ['pii', 'useja'])
 compile_for_toggle_combinations('interpreter_resume', ['pii', 'useja'])
 
 
