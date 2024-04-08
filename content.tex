@@ -29,10 +29,13 @@
 				#1
 			\end{minipage} &
 			\hfill\begin{tabular}{l@{\hspace{5pt}}l}
-				\iftoggle{pii}{\faPhone & \phonenumber \\
+				\faLinkedin & linkedin.com/in/joshuatanner2 \\
+				\iftoggle{pii}{
+				\faPhone & \phonenumber \\
 				\faEnvelope & \email \\
-				\faLinkedin & \linkedin \\
-				#2}{}
+				}{
+				\faEnvelope & mindful.jt@gmail.com \\
+				}#2
 			\end{tabular} 	\iftoggle{photo}{&
 			\begin{tabular}{@{}r@{}}
 					\begin{minipage}{.3\textwidth}
