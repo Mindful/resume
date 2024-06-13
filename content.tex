@@ -10,6 +10,7 @@
 \newcommand{\languages}{\mlt{Languages}{言語}}
 \newcommand{\educationhistory}{\mlt{Education}{学歴}}
 \newcommand{\papers}{\mlt{Research}{研究}}
+\newcommand{\awards}{\mlt{Awards}{受賞歴}}
 \newcommand{\extras}{\mlt{Projects}{個人開発}}
 
 
@@ -55,6 +56,11 @@
 
 
 \newcommand{\summarybody}{\mlt{I'm a software engineer with a focus in natural language processing and backend engineering. Programming and languages were both hobbies for me long before they became part of work, and that passion continues to fuel me professionally.}{自然言語処理とバックエンドに精通しているソフトウェアエンジニアである。プログラミングも言語も仕事に関わる前からずっと好きであり、その情熱を仕事に向けて活動している。}}
+
+\newcommand{\lreccolingAward}{
+\award{LREC-COLING 2024 Outstanding Paper Award}
+}
+\newcommand{\ebayexpoAward}{\award{\mlt{2016 eBay Innovation Expo Presenter}{2016 eBay社内イノベーション博覧会の発表者}}}
 
 \newcommand{\jobexpMantra}{
 	\jobexperience{\mlt{NLP Lead}{NLPリード}}
@@ -161,33 +167,17 @@
 % ------------ end eBay ------------------
 
 
-\newcommand{\extraResolve}{
-	\extra{MWE Dictionary}
+\newcommand{\projectResolve}{
+	\project{MWE Dictionary}
 	{\mlt{2023}{2023年}}
 	{\mlt{Multiword-expression aware dictionary for language learners using models trained with Pytorch Lightning and a gRPC backend}{
 			Pytorch Lightningで訓練されたモデルとgRPCバックエンドを使用し、言語学習者向けの複単語表現を検出する辞書アプリを開発}}
 }
-\newcommand{\extraParasite}{
-	\extra{Parasite}
-	{\mlt{Personal Project / 2009}{2009年}}
+\newcommand{\projectParasite}{
+	\project{Parasite}
+	{\mlt{2009}{2009年}}
 	{\mlt{Lead development of StarCraft 2 mod reaching two million plays per week}{一週間当たりにプレイされた回数が2百万回に達したStarCraft 2のMODを開発し、その後維持するためにもう1人の開発者と2人のコミュニティ管理者でチームを結成}}
 }
-
-%\newcommand{\awardAmplify}{
-	%\extra{\mlt{eBay Amplify Presenter}{eBay Amplifyの登壇者に選出}}
-	%{\mlt{Paper Submission}{論文投稿}}
-	%{\mlt{2018/05/7}{2018年5月7日}}
-	%{\mlt{Information extraction research I conducted as a side project was accepted for presentation at eBay's internal research conference (25\% acceptance rate).}{片手間で進めた情報抽出の研究でeBayの社内学会の登壇者に選ばれた (25\%のアクセプト率)。}}
-%}
-
-
-\newcommand{\extraInnovationExpo}{ 
-		\extra{\mlt{Affiliate Link Generator}{アフィリエイトリンク生成器}}
-		{\mlt{eBay Innovation Expo / 2016}{2016年}} %2016/06/04
-		{\mlt{Hackathon project converting relevant n-grams into affiliate links featured in internal expo (14\% acceptance rate)}
-		{関連性の高いn-グラムをアフィリエイトリンクに変換するハッカソンプロジェクトが社内イノベーション博覧会での発表に選ばれた(採択率14\%)}}
-}
-
 
 % Interpreter work
 
@@ -264,7 +254,7 @@
 }
 
 \newcommand{\papermosla}{
-	\paper{Project MOSLA: Recording Every Moment of Second Language Acquisition}{M. Hagiwara, \textbf{J Tanner}}{LREC-COLING 2024 Oral Presentation \& Best Paper Candidate}{https://aclanthology.org/2024.lrec-main.1147/}
+	\paper{Project MOSLA: Recording Every Moment of Second Language Acquisition}{M. Hagiwara, \textbf{J Tanner}}{LREC-COLING 2024 Oral Presentation}{https://aclanthology.org/2024.lrec-main.1147/}
 }
 
 \newcommand{\papermangatranslationlongcontext}{
@@ -272,7 +262,7 @@
 }
 
 \newcommand{\papergrammartagger}{
-	\paper{GrammarTagger: A Multilingual, Minimally-Supervised Grammar Profiler for Language Education}{M Hagiwara, \textbf{J Tanner}, K Sakaguchi}{arxiv preprint 2021}{https://arxiv.org/abs/2104.03190}
+	\paper{GrammarTagger: A Multilingual, Minimally-Supervised Grammar Profiler for Language Education}{M Hagiwara, \textbf{J Tanner}, K Sakaguchi}{Preprint 2021}{https://arxiv.org/abs/2104.03190}
 }
 
 % 2019/9 - 2021/12
