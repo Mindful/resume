@@ -14,7 +14,7 @@ Personally identifiable information is intentionally excluded from the repo and 
 Noto sans
 ```shell
 # linux
-apt install fonts-noto 
+apt install fonts-noto latex-cjk-al texlive-fonts-extra
 
 # mac
 brew tap homebrew/cask-fonts 
