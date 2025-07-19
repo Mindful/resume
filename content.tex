@@ -19,39 +19,21 @@
 \newcommand{\header}[2]{
 	\vspace*{-1cm}
 	\noindent
-	\iftoggle{photo}{
-		\begin{tabularx}{\textwidth}{@{}lXr@{}}
-	}{
-		\begin{tabularx}{\textwidth}{@{}lX@{}}
-	}
-			\begin{minipage}{0.5\linewidth}
-				\vspace*{\fill}
-				{\huge{\textbf{Joshua Tanner}}} \\
-				#1
-			\end{minipage} &
-			\hfill\begin{tabular}{l@{\hspace{5pt}}l}
-				\faLinkedin & linkedin.com/in/joshuatanner2 \\
-				\iftoggle{pii}{
-				\faPhone & \phonenumber \\
-				\faEnvelope & \email \\
-				}{
-				\faEnvelope & mindful.jt@gmail.com \\
-				}#2
-			\end{tabular} 	\iftoggle{photo}{&
-			\begin{tabular}{@{}r@{}}
-					\begin{minipage}{.3\textwidth}
-						\begin{flushright}
-							\medskip
-							\fbox{\includegraphics[width=2cm, height=2cm]{photo.jpg}}
-							\medskip
-						\end{flushright}
-					\end{minipage}
-			\end{tabular}}{}
-		\end{tabularx}
-		
-		\iftoggle{photo}{}{
-		\noindent\rule{\linewidth}{1pt}\\
-		}
+	\begin{tabularx}{\textwidth}{@{}lX@{}}
+		\begin{minipage}{0.5\linewidth}
+			\vspace*{\fill}
+			{\huge{\textbf{Joshua Tanner}}} \\
+			#1
+		\end{minipage} &
+		\hspace*{-6.5em}% ← shift the table left
+		\begin{tabular}{l@{\hspace{5pt}}l@{\hspace{2em}}l@{\hspace{5pt}}l}
+			\faGlobe & https://joshuatanner.dev/ &
+			\faLinkedin & linkedin.com/in/joshuatanner2 \\
+			\faEnvelope & mindful.jt@gmail.com &
+			\faGithub & github.com/joshuatanner/ \\
+		\end{tabular}
+	\end{tabularx}
+	\rule{\linewidth}{1pt}
 }
 
 
@@ -126,7 +108,7 @@
 %-------------eBay---------------------
 
 
-\newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and maintained sole ownership of Scala distributed scheduler that powered proactive messaging for eBay's chat bot and Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、1人で保守}}
+\newcommand{\ebayItemScheduler}{\item \mlt{Lead development of, tested, and owned Scala distributed scheduler that powered proactive messaging for eBay's chat bot and Chinese iPhone app}{eBayのチャットボットと中国版iPhoneアプリの自発的なメッセージを送信するScalaの分散スケジューラとその自動テストの開発を率い、保守}}
 
 \newcommand{\ebayItemRevminer}{\item \mlt{Research into bootstrapping NLP process to extract informative noun/adjective pairs from product reviews was accepted for presentation at eBay's internal research conference (25\% acceptance rate)}{PythonでspaCyを利用し、商品レビューから有用な名詞と形容詞の組み合わせを抽出するブートストラップ自然言語処理を実装}}
 
@@ -321,11 +303,11 @@
 
 % 2014年4月 - 2015年4月
 \newcommand{\educationHyogo}{
-	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2015}{2015年}}{\mlt{Exchange Program}{交換留学}}
+	\education{\mlt{University of Hyogo}{兵庫県立大学}}{\mlt{2014 -- 2015}{2014年 -- 2015年}}{\mlt{Exchange Program}{交換留学}}
 	{\mlt{Studied Japanese language in a yearlong exchange program}{日本語の勉強を中心とした留学プログラム}}
 }
 
 \newcommand{\educationToudai}{ % 2020/12 - 2021/12
-	\education{\mlt{University of Tokyo}{東京大学}}{\mlt{2021}{ 2021年}}{\mlt{Research Internship}{研究実習}}
+	\education{\mlt{University of Tokyo}{東京大学}}{\mlt{2020 -- 2021}{2020年 -- 2021年}}{\mlt{Research Internship}{研究実習}}
 	{\mlt{One year of natural language processing research at the Institute of Industrial Science}{東京大学生産技術研究所で自然言語処理の研究}}
 }
